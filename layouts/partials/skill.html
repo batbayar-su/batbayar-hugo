@@ -1,0 +1,52 @@
+<!-- ========================================= -->
+<!-- $SKILLS SECTION                           -->
+<!-- ========================================= -->
+
+<section id="skills" class="main-block">
+  <div class="container text-center">
+
+    <!-- #SKILLS TITLE -->
+    <div class="main-title text-left wow fadeIn">
+      <div class="main-title__inner">
+        <div class="text-right main-title__left">
+          <i class="fa fa-pie-chart mega"></i>
+          <h2 class="text-uppercase heavy lh padder">skills</h2>
+          <em class="h5 serif em text-capitalize regular">Whats I'm good at</em>
+        </div>
+        <div class="main-title__right">
+          <p class="serif em regular h6">
+            Always enjoy to try new things to expand possibility which could lead to a success. Mentoring juniors never
+            been issue to me.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- #SKILLS CONTENT -->
+    <div class="main-block__padder">
+
+      <!-- #SKILLS TABS -->
+      <ul class="nav nav-tabs text-uppercase small bold inline-block tabs-list wow fadeInUp" role="tablist">
+        <li role="presentation" class="active"><a href="#skill-panel-1" role="tab" data-toggle="tab">coding</a></li>
+        <li role="presentation"><a href="#skill-panel-2" role="tab" data-toggle="tab">knowlage</a></li>
+        <li role="presentation"><a href="#skill-panel-3" role="tab" data-toggle="tab">personal</a></li>
+        <li role="presentation"><a href="#skill-panel-4" role="tab" data-toggle="tab">languages</a></li>
+      </ul>
+
+      <!-- #SKILLS PANELS -->
+      <div class="main-block__sub-padder tab-content text-left wow fadeInUp">
+
+        {{ partial "skill/coding" . }}
+
+        {{ partial "skill/knowledge" . }}
+
+        {{ partial "skill/personal" . }}
+
+        {{ partial "skill/language" . }}
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

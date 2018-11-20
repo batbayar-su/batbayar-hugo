@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
-{{ partial "head" }}
+<html lang="en" class="no-js">
+{{ partial "head" . }}
 <body>
-  <div class="uk-cover-container" uk-height-viewport>
-    <img src="images/dark.jpg" alt="" uk-cover>
-  </div>
+  <section id="preloader"></section>
 
-  {{ partial "script" }}
+  {{ partial "header" . }}
+
+  {{ partial "navigation" . }}
+
+  {{ partial "profile" . }}
+
+  {{ partial "resume" . }}
+
+  {{ partial "portfolio" . }}
+
+  {{ partial "skill" . }}
+
+  {{ partial "footer" . }}
+
+  {{ partial "script" . }}
 </body>
 </html>
