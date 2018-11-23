@@ -1,0 +1,38 @@
+- item:
+    name: Gamma
+    link: https://grab.com
+    image: gamma.jpg
+    description: >
+                  Internal platform which is used for company employees, mostly customer experience team. Following
+                  agile development so eveything flows in this project.
+
+- item:
+    name: Abcdtask
+    link: https://abcdtask.com
+    image: abcdtask.jpg
+    description: >
+                  Crowdsourcing platform that is co-operating with several same service providers. Yahoo Japan, Shufti,
+                  Netmile are some of the co-operators.
+
+- item:
+    name: Crowdjob
+    link: https://crowd-job.com
+    image: crowdjob.jpg
+    description: >
+                  Abcdtask-s landing page and introduction website.
+
+- item:
+    name: Sugotoku
+    link: https://www.dcm-b.jp/cs/top.html
+    image: sugotoku.jpg
+    description: >
+                  Advertisement system that has tracking system in it. Being part of back-end development team. This url
+                  is front-end side.
+
+- item:
+    name: Ragusa Tour
+    link: http://ragusa-tour.com
+    image: ragusatour.jpg
+    description: >
+                  Introduction site of tourist guide and agent company. Worked on this site as solo freelancer.
+                  Developed in Ruby on Rails.

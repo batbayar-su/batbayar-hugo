@@ -1,0 +1,40 @@
+- item:
+    company: Grab
+    location: Singapore
+    image: grab.png
+    dates: 2017-12 - now
+    position: Senior fullstack developer
+    description: >
+                  Working in company's internal platform that is mostly being used for internal company matters. Having
+                  a good chance to take a look at fast growing company and learning a lot from so talented people for
+                  coding and non coding things.
+
+- item:
+    company: Unimedia Solutions
+    location: Mongolia
+    image: unimedia.jpg
+    dates: 2017-01 - 2017-12
+    position: Senior fullstack developer
+    description: >
+                  Didn't change a much after previous representative agent became branch company. Still Rails, AWS, and
+                  AngularJS were main topics.
+
+- item:
+    company: Unimedia
+    location: Mongolia
+    image: unimedia.jpg
+    dates: 2014-01 - 2016-12
+    position: Fullstack developer
+    description: >
+                  I had been working on several projects that are based on plenty of technologies. Had a good chance to
+                  work on devops, sysops jobs since there wasn't any role in the company.
+
+- item:
+    company: Aptech Worldwide Mongolia
+    location: Mongolia
+    image: aptech.jpg
+    dates: 2012-01 - 2014-01
+    position: Teacher
+    description: >
+                  Was teaching basic knowledge of computer, web and desktop application development, mysql, mssql, basic
+                  linux usage etc...

@@ -29,83 +29,28 @@
     <!-- #PORTFOIO ITEMS -->
     <div class="main-block__sub-padder">
       <div class="portfolio-items clearfix wow fadeInUp">
-
+        {{ range $.Site.Data.portfolio }}
         <!-- PORTFOLIO ITEM -->
-        <div class="portfolio-item shuffle-item filtered" style="background-image: url('assets/images/work/thumbnails/gamma.jpg'); position: absolute; top: 0px; left: 0px; visibility: visible; z-index: 4; transition: transform 250ms ease-out, opacity 250ms ease-out;" data-groups="['all', 'team', 'develop']">
+        <div class="portfolio-item shuffle-item filtered"
+             style="background-image: url('assets/images/work/thumbnails/{{ .item.image }}'); position: absolute;
+                    top: 0px; left: 0px; visibility: visible; z-index: 4;
+                    transition: transform 250ms ease-out, opacity 250ms ease-out;"
+             data-groups="['all', 'team', 'develop']"
+        >
           <div class="item-caption">
             <div class="table">
               <div class="table-cell">
-                <a href="/assets/images/work/large/gamma.jpg" class="zoom-btn plus-icon plus-icon-big btn--main-inverted"></a>
-                <a href="https://grab.com" class="btn-icon portfolio-icon-btn btn--main-inverted" rel="noopener noreferrer" target="_blank">
+                <a href="/assets/images/work/large/{{ .item.image }}" class="zoom-btn plus-icon plus-icon-big btn--main-inverted"></a>
+                <a href="{{ .item.link }}" class="btn-icon portfolio-icon-btn btn--main-inverted" rel="noopener noreferrer" target="_blank">
                   <i class="fa fa-link"></i>
                 </a>
-                <h6 class="text-uppercase normal md-padder">Gamma</h6>
-                <em class="serif">Internal platform which is used for company employees, mostly customer experience team. Following agile development so eveything flows in this project.</em>
+                <h6 class="text-uppercase normal md-padder">{{ .item.name }}</h6>
+                <em class="serif">{{ .item.description }}</em>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- PORTFOLIO ITEM -->
-        <div class="portfolio-item shuffle-item filtered" style="background-image: url('assets/images/work/thumbnails/abcdtask.jpg'); position: absolute; top: 0px; left: 0px; visibility: visible; z-index: 4; transition: transform 250ms ease-out, opacity 250ms ease-out;" data-groups="['all', 'team', 'develop', 'cloud']">
-          <div class="item-caption">
-            <div class="table">
-              <div class="table-cell">
-                <a href="/assets/images/work/large/abcdtask.jpg" class="zoom-btn plus-icon plus-icon-big btn--main-inverted"></a>
-                <a href="https://abcdtask.com" class="btn-icon portfolio-icon-btn btn--main-inverted" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-link"></i>
-                </a>
-                <h6 class="text-uppercase normal md-padder">Abcdtask</h6>
-                <em class="serif">Crowdsourcing platform that is co-operating with several same service providers. Yahoo Japan, Shufti, Netmile are some of the co-operators.</em>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- PORTFOLIO ITEM -->
-        <div class="portfolio-item shuffle-item filtered" style="background-image: url('assets/images/work/thumbnails/crowdjob.jpg'); position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(509px, 0px, 0px) scale3d(1, 1, 1); z-index: 3; transition: transform 250ms ease-out, opacity 250ms ease-out;" data-groups="['all', 'team', 'develop', 'cloud']">
-          <div class="item-caption">
-            <div class="table">
-              <div class="table-cell">
-                <a href="/assets/images/work/large/crowdjob.jpg" class="zoom-btn plus-icon plus-icon-big btn--main-inverted"></a>
-                <a href="https://crowd-job.com" class="btn-icon portfolio-icon-btn btn--main-inverted" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-link"></i>
-                </a>
-                <h6 class="text-uppercase normal md-padder">Crowdjob</h6>
-                <em class="serif">Abcdtask-s landing page and introduction website. </em>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- PORTFOLIO ITEM -->
-        <div class="portfolio-item shuffle-item filtered" style="background-image: url('assets/images/work/thumbnails/sugotoku.jpg'); position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(1018px, 0px, 0px) scale3d(1, 1, 1); z-index: 2; transition: transform 250ms ease-out, opacity 250ms ease-out;" data-groups="['all', 'team', 'develop', 'cloud']">
-          <div class="item-caption">
-            <div class="table">
-              <div class="table-cell">
-                <a href="/assets/images/work/large/sugotoku.jpg" class="zoom-btn plus-icon plus-icon-big btn--main-inverted"></a>
-                <a href="https://www.dcm-b.jp/cs/top.html" class="btn-icon portfolio-icon-btn btn--main-inverted" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-link"></i>
-                </a>
-                <h6 class="text-uppercase normal md-padder">Sugotoku</h6>
-                <em class="serif">Advertisement system that has tracking system in it. Being part of back-end development team. This url is front-end side.</em>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- PORTFOLIO ITEM -->
-        <div class="portfolio-item shuffle-item filtered" style="background-image: url('assets/images/work/thumbnails/ragusatour.jpg'); position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(2036px, 0px, 0px) scale3d(1, 1, 1); z-index: 0; transition: transform 250ms ease-out, opacity 250ms ease-out;" data-groups="['all', 'solo', 'develop', 'cloud']">
-          <div class="item-caption">
-            <div class="table">
-              <div class="table-cell">
-                <a href="/assets/images/work/large/ragusatour.jpg" class="zoom-btn plus-icon plus-icon-big btn--main-inverted"></a>
-                <a href="http://ragusa-tour.com" class="btn-icon portfolio-icon-btn btn--main-inverted" rel="noopener noreferrer" target="_blank">
-                  <i class="fa fa-link"></i>
-                </a>
-                <h6 class="text-uppercase normal md-padder">Ragusa Tour</h6>
-                <em class="serif">Introduction site of tourist guide and agent company. Worked on this site as solo freelancer. Developed in Ruby on Rails.</em>
-              </div>
-            </div>
-          </div>
-        </div>
+        {{ end }}
       </div>
     </div>
 

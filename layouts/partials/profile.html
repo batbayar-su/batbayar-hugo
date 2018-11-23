@@ -38,32 +38,19 @@
         <div>
           <h5 class="text-capitalize">personal info</h5>
           <ul class="padder list-unstyled info-list">
-            <li>Name : Batbayar Sukhbaatar</li>
-            <li>Age : 28 Years Old</li>
-            <li>Phone : <a href="tel:+6587687357">+65-87687357</a></li>
-            <li>Email : <a href="mailto:batbayar.sukhbaatar@gmail.com">batbayar.sukhbaatar@gmail.com</a></li>
+            <li>Name : {{ $.Site.Title }}</li>
+            <li>Age : {{ sub now.Year 1990 }} years old</li>
+            <li>Phone : <a href="tel:{{ $.Site.Data.general.phone }}">{{ $.Site.Data.general.phone }}</a></li>
+            <li>Email : <a href="mailto:{{ $.Site.Data.general.email }}">{{ $.Site.Data.general.email }}</a></li>
           </ul>
           <ul class="list-inline list-gutter-xs padder h5 bare-social-menu">
+            {{ range $.Site.Data.socials }}
             <li>
-              <a href="https://linkedin.com/in/batbayar.su" class="linkedin-color" rel="noopener noreferrer" target="_blank">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li><!--
-            --><li>
-              <a href="https://github.com/batbayar-su" class="github-color">
-                <i class="fa fa-github"></i>
-              </a>
-            </li><!--
-            --><li>
-              <a href="http://stackoverflow.com/users/3085470/batbayar" class="stack-overflow-color" rel="noopener noreferrer" target="_blank">
-                <i class="fa fa-stack-overflow"></i>
-              </a>
-            </li><!--
-            --><li>
-              <a href="https://www.facebook.com/batbayar.su" class="facebook-color" rel="noopener noreferrer" target="_blank">
-                <i class="fa fa-facebook"></i>
+              <a href="{{ .item.link }}" class="{{ .item.name }}-color" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-{{ .item.name }}"></i>
               </a>
             </li>
+            {{ end }}
           </ul>
         </div>
       </div>
@@ -71,10 +58,10 @@
       <!-- #PROFILE STORY -->
       <div class="col-lg-4 col-lg-pull-8 col-xs-12 text-left story-column wow fadeInUp">
         <div>
-          <h5 class="text-capitalize">Basic Status</h5>
+          <h5 class="text-capitalize">Summary</h5>
           <p class="padder">
             I am working as the fullstack developer for 4 years. Had been facing a lot of issues, success, failure, and
-            gaining so much experience from all of these. I love being fullstack because there are tremendous
+            gaining so much experience from all of those. I love being fullstack because there are tremendous
             possibilities and it allow me to learn continuously.
           </p>
         </div>

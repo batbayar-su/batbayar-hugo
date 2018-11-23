@@ -6,37 +6,21 @@
 
   <div class="xlg-padder">
     <ul class="list-inline hollow-social-menu h5 list-gutter-xs">
-      <li class="wow rollIn">
-        <a href="http://linkedin.com/in/batbayar.su" class="sm-rounded-box linkedin-bg">
-          <i class="fa fa-linkedin"></i>
+      {{ .Scratch.Set "delay" 0 }}
+      {{ range $.Site.Data.socials }}
+      <li class="wow rollIn" data-wow-delay='{{ $.Scratch.Get "delay" }}s'>
+        <a href="{{ .item.link }}" class="sm-rounded-box {{ .item.name }}-bg">
+          <i class="fa fa-{{ .item.name }}"></i>
         </a>
-      </li><!--
-      --><li class="wow rollIn" data-wow-delay="0.3s">
-        <a href="https://github.com/batbayar-su" class="sm-rounded-box github-bg">
-          <i class="fa fa-github"></i>
-        </a>
-      </li><!--
-      --><li class="wow rollIn" data-wow-delay="0.6s">
-        <a href="http://stackoverflow.com/users/3085470/batbayar" class="sm-rounded-box stack-overflow-bg">
-          <i class="fa fa-stack-overflow"></i>
-        </a>
-      </li><!--
-      --><li class="wow rollIn" data-wow-delay="0.9s">
-        <a href="https://www.facebook.com/batbayar.su" class="sm-rounded-box facebook-bg">
-          <i class="fa fa-facebook"></i>
-        </a>
-      </li><!--
-      --><li class="wow rollIn" data-wow-delay="1.2s">
-        <a href="mailto:batbayar.sukhbaatar@gmail.com?subject=Site Feedback" class="sm-rounded-box pencil-bg">
-          <i class="fa fa-pencil"></i>
-        </a>
+        {{ $.Scratch.Add "delay" 0.2 }}
       </li>
+      {{ end }}
     </ul>
   </div>
 
   <div class="xlg-padder text-capitalize">
     <div class="well-sm copyright-holder">
-      <p>Batbayar Sukhbaatar @ 2018.</p>
+      <p>{{ $.Site.Title }} @ {{ now.Year }}.</p>
     </div>
   </div>
 </footer>
