@@ -3,12 +3,16 @@
 {{ partial "head" . }}
 <body>
   <section id="preloader"></section>
-  {{ partial "header" . }}
+  {{ partial "blog_header" . }}
   {{ partial "navigation" . }}
-  {{ partial "profile" . }}
-  {{ partial "resume" . }}
-  {{ partial "portfolio" . }}
-  {{ partial "skill" . }}
+  <section class="main-block">
+  <main>
+      <article>
+          <h1>{{ .Title }}</h1>
+          {{ .Content }}
+      </article>
+  </main>
+  </section>
   {{ partial "footer" . }}
   {{ partial "script" . }}
 </body>

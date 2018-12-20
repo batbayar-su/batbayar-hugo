@@ -65,8 +65,8 @@ jQuery(document).ready
     {
       $.when
       (
-        $.getScript( "assets/js/plugins/wow.min.js" ),
-        $.getScript( "assets/js/plugins/jquery.stellar.min.js" ),
+        $.getScript( "/assets/js/plugins/wow.min.js" ),
+        $.getScript( "/assets/js/plugins/jquery.stellar.min.js" ),
         $.Deferred( function ( deferred ) { $( deferred.resolve ); })
       ).done
       (

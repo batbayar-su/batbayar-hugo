@@ -1,7 +1,7 @@
 ---
 title: "Hugo ашиглаж статик сайт хийх"
 date: 2018-11-14T17:56:53+08:00
-draft: true
+
 categories:
   - "Development"
 tags:
