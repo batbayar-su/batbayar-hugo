@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://batbayar.ml/post/hugo-ashiglaj-static-site-hiih/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/categories/development/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/tags/git/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/tags/hugo/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/tags/markdown/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/post/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/tags/site/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/tags/static/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://batbayar.ml/tags/</loc>
+    <lastmod>2018-11-14T17:56:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
