@@ -82,10 +82,7 @@
 .testimonial-header a:hover,
 
 /* contact */
-.captcha-holder,
-
-/* -- work single */
-#single-work-item h2
+.captcha-holder
 { color: #fff; }
 
 /* #WHITE BACKGROUND
@@ -107,27 +104,17 @@
 .testimonial-header span,
 
 /* contact */
-.captcha-holder .captcha,
-
-/* -- work item */
-.rslides_tabs a:hover
+.captcha-holder .captcha
 { background-color: #fff; }
 
 /* #TRANSPARENT WHITE COLOR
 /* ======================== */
-
-/* milestones */
-.milestones-list i
-{ color: rgba(255, 255, 255, 0.1); }
 
 /* widget title inverted */
 .widget-title--inverted em,
 
 /* hobbies */
 .hobby-description,
-
-/* milestones */
-.milestones-list span,
 
 /* testimonials */
 .testimonial-job,
@@ -136,9 +123,6 @@
 
 /* #TRANSPARENT WHITE BACKGROUND
 /* ============================= */
-
-/* -- work item */
-.rslides_tabs a { background-color: rgba(255, 255, 255, 0.7); }
 
 /* hobbies */
 .hobbies-list > li,
@@ -200,10 +184,7 @@
 .recent-posts-wrapper li + li,
 .tweets-list li + li,
 .comments-list,
-.comment,
-
-/* -- work item */
-.project-info ul li + li
+.comment
 { border-color: #e5e5e5 }
 
 /* #MUTED GRAY COLOR
@@ -262,9 +243,6 @@ body,
 /* contact */
 .captcha-holder .captcha,
 
-/* -- work item */
-.work-item-navigation a,
-
 /* footer */
 footer .hollow-social-menu a,
 .copyright-holder
@@ -297,9 +275,6 @@ h6, .h6
 
 /* widget title */
 .widget-title::before,
-
-/* -- work item */
-.work-inner-title::after,
 
 /* hobbies */
 .hobby-description,
@@ -405,9 +380,6 @@ a,
 /* resume */
 .timeline-info-list,
 
-/* milestones */
-.milestones-list h1,
-
 /* skills */
 .colored-bullets li::before,
 
@@ -426,10 +398,7 @@ a,
 /* ======================== */
 
 /* testimonials */
-#testimonials .overlay,
-
-/* -- work item */
-#single-work-item .overlay
+#testimonials .overlay
 { background-color: rgba(51, 187, 285, 0.85); }
 
 /* #BLUE BORDER
@@ -502,9 +471,6 @@ a:hover { color: #30b2f2; }
 /* splitted home */
 #splitted-home .btn:hover,
 
-/* milestones */
-.milestones-list li:nth-child(1),
-
 /* pricing */
 .package-title-box,
 
@@ -512,11 +478,6 @@ a:hover { color: #30b2f2; }
 .view-news-btn,
 .pager li > a
 { background-color: #1f2426; }
-
-/* dark blue shades - milestones */
-.milestones-list li:nth-child(2) { background-color: rgba(31, 36, 38, 0.98); }
-.milestones-list li:nth-child(3) { background-color: rgba(31, 36, 38, 0.96); }
-.milestones-list li:nth-child(4) { background-color: rgba(31, 36, 38, 0.94); }
 
 /* #DARKER BLUE BORDER
 /* ======================== */

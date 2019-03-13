@@ -8,7 +8,6 @@
 
     > #WOW PLUGIN
     > #STELLAR
-    > #FASTCLICK PLUGIN
 
   > $PRELOADER
   > $FULLSCREEN SECTION
@@ -18,16 +17,12 @@
     > #SMOOTH SCROLL
 
   > $TIMELINE LOADER
-  > $MILESTONES COUNTERUP
   > $PORTFOLIO
 
     > #SHUFFLE
     > #LIGHTBOX
     > #SHOW MORE ITEMS
 
-  > $RSLIDES
-  > $FITVIDS
-  > $TESTIMONIALS ROTATOR
   > $CONTACT FORMS
 
 */
@@ -65,8 +60,6 @@ jQuery(document).ready
     {
       $.when
       (
-        $.getScript( "/assets/js/plugins/wow.min.js" ),
-        $.getScript( "/assets/js/plugins/jquery.stellar.min.js" ),
         $.Deferred( function ( deferred ) { $( deferred.resolve ); })
       ).done
       (
@@ -92,23 +85,6 @@ jQuery(document).ready
         }// eof: function
       );// eof: done
 
-    };//eof: if
-
-    /* #FASTCLICK PLUGIN */
-    /* ============================ */
-
-    // load this script for touch devices
-    // to remove click delays
-    if ( client.touch )
-    {
-      $.getScript
-      (
-        "<%= asset_path('plugins/vendor/fastclick.min.js') %>",
-        function ()
-        {
-          FastClick.attach(document.body);
-        }
-      );
     };//eof: if
 
     /* ========================================= */
@@ -217,28 +193,6 @@ jQuery(document).ready
           // hide more button if there are no items
           // to show on page load
           relatedShowMoreBtn.hide();
-        }
-      }
-    );
-
-    /* ========================================= */
-    /* $MILESTONES COUNTERUP                     */
-    /* ========================================= */
-
-    // the point of this snippet is to
-    // wait until the items show in viewport
-    // then start counting up
-    // it uses inview plugin to detect when items is in viewport
-    // and countup plugin to increase number from 0 to whatever
-    // specified number you define in html
-    $('.milestones-list li').one
-    (
-      'inview',
-      function ( event, isInView, visiblePartX, visiblePartY )
-      {
-        if ( isInView )
-        {
-          $('.milestones-list h1').countTo();
         }
       }
     );
@@ -446,66 +400,6 @@ jQuery(document).ready
       loadMoreBtn.attr('class', loadMoreBtnOriginalClasses);
       loadMoreBtn.text( loadMoreBtnOriginalText );
     };
-
-    /* ========================================= */
-    /* $RSLIDES                                  */
-    /* ========================================= */
-
-    // image slider for work items
-    if ( $().responsiveSlides ) { $(".rslides").responsiveSlides({ pager: true }); };
-
-    /* ========================================= */
-    /* $FITVIDS                                  */
-    /* ========================================= */
-
-    // responsive videos plugin
-    if ( $().fitVids ) { $('.fitvid').fitVids(); };
-
-    /* ========================================= */
-    /* $TESTIMONIALS ROTATOR                     */
-    /* ========================================= */
-
-    // rotate client testimonials
-    // using quovolver plugin
-    if ( $().quovolver )
-    {
-      $('.quotes').quovolver
-      (
-        {
-          children        : '.quote',
-          transitionSpeed : 450,
-          autoPlay        : true,
-          equalHeight     : false,
-          navPosition     : 'above',
-          navPrev         : true,
-          navNext         : true,
-          navNum          : false,
-          navText         : false
-        }
-      );
-
-      // trigger previous
-      $('.quote-rotator-prev').on
-      (
-        'click',
-        function (event)
-        {
-          event.preventDefault();
-          $('.nav-prev a').trigger('click');
-        }
-      );
-
-      // trigger next
-      $('.quote-rotator-next').on
-      (
-        'click',
-        function (event)
-        {
-          event.preventDefault();
-          $('.nav-next a').trigger('click');
-        }
-      );
-    };//eof: if
 
     /* ========================================= */
     /* $CONTACT FORMS                            */
