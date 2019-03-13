@@ -2,7 +2,6 @@
 <html lang="en" class="no-js">
 {{ partial "head" . }}
 <body>
-  <section id="preloader"></section>
   {{ partial "header" . }}
   {{ partial "navigation" . }}
   {{ partial "profile" . }}
@@ -10,6 +9,8 @@
   {{ partial "portfolio" . }}
   {{ partial "skill" . }}
   {{ partial "footer" . }}
+  {{ template "_internal/google_analytics.html" . }}
   {{ partial "script" . }}
+  {{ partial "style" . }}
 </body>
 </html>

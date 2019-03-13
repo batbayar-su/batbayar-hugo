@@ -1,7 +1,7 @@
 {{ $jquery := resources.Get "script/libs/jquery-1.12.4.min.js" }}
 {{ $modernizr := resources.Get "script/libs/modernizr-latest.min.js" }}
 {{ $bootstrap := resources.Get "script/libs/bootstrap.min.js" }}
-{{ $libJS := slice $jquery $modernizr $bootstrap | resources.Concat "js/libraries.js" | resources.Fingerprint }}
+{{ $libJS := slice $jquery $modernizr $bootstrap | resources.Concat "script/libraries.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $libJS.Permalink }}"></script>
 {{ $PageScroll2id := resources.Get "script/plugins/jquery.malihu.PageScroll2id.min.js" }}
 {{ $shuffle := resources.Get "script/plugins/jquery.shuffle.min.js" }}
@@ -10,9 +10,7 @@
 {{ $inview := resources.Get "script/plugins/jquery.inview.min.js" }}
 {{ $stellar := resources.Get "script/plugins/jquery.stellar.min.js" }}
 {{ $wow := resources.Get "script/plugins/wow.min.js" }}
-{{ $pluginJS := slice $PageScroll2id $shuffle $sticky $magnific $inview $stellar $wow | resources.Concat "js/plugins.js" | resources.Fingerprint }}
+{{ $pluginJS := slice $PageScroll2id $shuffle $sticky $magnific $inview $stellar $wow | resources.Concat "script/plugins.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $pluginJS.Permalink }}"></script>
 {{ $script := resources.Get "script/script.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
-
-{{ template "_internal/google_analytics.html" . }}

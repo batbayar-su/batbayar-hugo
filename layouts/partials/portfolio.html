@@ -28,12 +28,11 @@
 
     <!-- #PORTFOIO ITEMS -->
     <div class="main-block__sub-padder">
-      <div class="portfolio-items clearfix wow fadeInUp">
+      <div class="portfolio-items clearfix">
         {{ range $.Site.Data.portfolio }}
         <!-- PORTFOLIO ITEM -->
         <div class="portfolio-item"
-             style="background-image: url('assets/images/work/thumbnails/{{ .item.image }}');
-                    position: absolute; top: 0px; left: 0px; z-index: 4;"
+             style="background-image: url('assets/images/work/thumbnails/{{ .item.image }}');"
         >
           <div class="item-caption">
             <div class="table">

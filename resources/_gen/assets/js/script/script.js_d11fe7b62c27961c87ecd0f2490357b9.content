@@ -5,9 +5,7 @@ jQuery(document).ready
 ($.Deferred(function(deferred){$(deferred.resolve);})).done
 (function()
 {new WOW().init({offset:50});$(window).stellar
-({horizontalScrolling:false,resposive:true});});};$(window).load
-(function()
-{$('body').css('overflow-y','auto');$('#preloader').fadeOut(350);$(window).trigger('resize');});var fullscreenContainer=$('.fullscreen');function setViewportHeight()
+({horizontalScrolling:false,resposive:true});});};var fullscreenContainer=$('.fullscreen');function setViewportHeight()
 {var viewportHeight=$(window).height();fullscreenContainer.css('height',viewportHeight);};setViewportHeight();$(window).resize
 (function()
 {setViewportHeight();});if($().stick_in_parent){$("#navigation").stick_in_parent()};if($().mPageScroll2id){$(".navbar-nav a, .btn-hire, #splitted-home-btn").mPageScroll2id({offset:".navbar-header"})};var timeline=$('.timeline');timeline.each

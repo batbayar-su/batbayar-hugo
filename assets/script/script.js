@@ -88,25 +88,6 @@ jQuery(document).ready
     };//eof: if
 
     /* ========================================= */
-    /* $PRELOADER                                */
-    /* ========================================= */
-
-    $(window).load
-    (
-      function ()
-      {
-        // show body scrollbar
-        $('body').css('overflow-y', 'auto');
-
-        // hide preloader
-        $('#preloader').fadeOut(350);
-
-        // needed to fix suffle gutter bug
-        $(window).trigger('resize');
-      }
-    );
-
-    /* ========================================= */
     /* $FULLSCREEN SECTION                       */
     /* ========================================= */
 
