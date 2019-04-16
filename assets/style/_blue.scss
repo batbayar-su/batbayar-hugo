@@ -202,19 +202,15 @@
 { background-color: #e5e5e5 }
 
 /* ========================================= */
-/*	$LIGHT GRAY - #D4D4D4                     */
-/* ========================================= */
-
-/* main title */
-.main-title em
-{ color: #d4d4d4; }
-
-/* ========================================= */
-/*	$GRAY - #999999                           */
+/*	$GRAY - #888888                          */
 /* ========================================= */
 
 /* #GRAY COLOR
 /* ============== */
+
+/* main title */
+.main-title em
+{ color: #888; }
 
 body,
 
@@ -227,9 +223,6 @@ body,
 
 /* secondary title */
 .secondary-title__icon.h5,
-
-/* work */
-.shuffle-filter a,
 
 /* blog */
 .post__meta a,
@@ -246,7 +239,7 @@ body,
 /* footer */
 footer .hollow-social-menu a,
 .copyright-holder
-{ color: #999999; }
+{ color: #888; }
 
 /* #GRAY BACKGROUND
 /* ================== */
@@ -254,7 +247,7 @@ footer .hollow-social-menu a,
 /* resume */
 .timeline-rail::before,
 .timeline-rail::after
-{ background-color: #999999; }
+{ background-color: #888; }
 
 /* ========================================= */
 /*	$DARK GRAY - #4D4D4D                      */
@@ -382,10 +375,6 @@ a,
 
 /* skills */
 .colored-bullets li::before,
-
-/* work */
-.shuffle-filter li.active a,
-.shuffle-filter li a:hover,
 
 /* pricing */
 .price,

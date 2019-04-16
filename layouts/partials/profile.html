@@ -28,7 +28,7 @@
       <div class="col-lg-4 col-md-6 col-lg-push-4 text-center wow fadeInUp">
         <div class="inline-block photo-column-inner">
           <div class="xlg-rounded-box profile-image-holder center-block">
-            <img src="/assets/images/avatar.jpg" class="img-responsive" style="width: 100%" alt="#">
+            <img src="/assets/images/avatar.jpg" class="img-responsive" style="width: 100%" alt="Profile image">
           </div>
         </div>
       </div>
@@ -39,14 +39,14 @@
           <h5 class="text-capitalize">personal info</h5>
           <ul class="padder list-unstyled info-list">
             <li>Name : {{ $.Site.Title }}</li>
-            <li>Age : {{ sub now.Year 1990 }} years old</li>
+            <li>Age : {{ sub now.Year 1991 }} years old</li>
             <li>Phone : <a href="tel:{{ $.Site.Data.general.phone }}">{{ $.Site.Data.general.phone }}</a></li>
             <li>Email : <a href="mailto:{{ $.Site.Data.general.email }}">{{ $.Site.Data.general.email }}</a></li>
           </ul>
           <ul class="list-inline list-gutter-xs padder h5 bare-social-menu">
             {{ range $.Site.Data.socials }}
             <li>
-              <a href="{{ .item.link }}" class="{{ .item.name }}-color" rel="noopener noreferrer" target="_blank">
+              <a href="{{ .item.link }}" class="{{ .item.name }}-color" aria-label="{{ .item.name }}" rel="noopener noreferrer" target="_blank">
                 <i class="fa fa-{{ .item.name }}"></i>
               </a>
             </li>
@@ -60,7 +60,7 @@
         <div>
           <h5 class="text-capitalize">Summary</h5>
           <p class="padder">
-            I am working as the fullstack developer for 4 years. Had been facing a lot of issues, success, failure, and
+            I am working as the fullstack developer for {{ sub now.Year 2013 }} years. Had been facing a lot of issues, success, failure, and
             gaining so much experience from all of those. I love being fullstack because there are tremendous
             possibilities and it allow me to learn continuously.
           </p>

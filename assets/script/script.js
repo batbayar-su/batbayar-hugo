@@ -19,7 +19,6 @@
   > $TIMELINE LOADER
   > $PORTFOLIO
 
-    > #SHUFFLE
     > #LIGHTBOX
     > #SHOW MORE ITEMS
 
@@ -182,47 +181,6 @@ jQuery(document).ready
     /* $PORTFOLIO                                */
     /* ========================================= */
 
-    /* #SHUFFLE
-    /* ===================== */
-
-    if ( $().shuffle )
-    {
-      // this piece of code used to categorize
-      // work items with nice animation
-      // using shuffle plugin
-      var $grid                 = $('.portfolio-items'),
-         shuffleFiltersParents = $('.shuffle-filter li'),
-         shuffleFilters        = $('.shuffle-filter a');
-
-      // initialize shuffle plugin
-      $grid.shuffle
-      (
-        {
-          itemSelector: '.portfolio-item'
-        }
-      );
-
-      // shuffle on filter click
-      shuffleFilters.on
-      (
-        'click',
-        function (event)
-        {
-          event.preventDefault();
-          var   $self     = $(this),
-              $parent   = $self.parent('li'),
-              groupName = $self.attr('data-group');;
-
-          // set active class
-          shuffleFiltersParents.removeClass('active');
-          $parent.addClass('active');
-
-          // reshuffle grid
-          $grid.shuffle('shuffle', groupName );
-        }//eof: function
-      );//eof: on
-    };//eof: if
-
     /* #LIGHTBOX
     /* ===================== */
 
@@ -246,7 +204,6 @@ jQuery(document).ready
     var maxItemsToload = 5,
 
        // elements
-       allItemsCategoryTab = $('.shuffle-filter').find('[data-group="all"]'),
        portfolioItemsHolder  = $('.portfolio-items'),
        portfolioItems  = portfolioItemsHolder.find('> div'),
        queuedToLoadItems = portfolioItems.filter(':hidden'),
@@ -301,9 +258,6 @@ jQuery(document).ready
           // store max items to load
           itemsToLoad = lastVisibleItem.nextAll(':lt(' + maxItemsToload + ')');
 
-          // reset shuffle category to show all items
-          allItemsCategoryTab.trigger('click');
-
           // add ".processed" class to flag items to be loaded
           // useful in avoiding showing items in case of
           // their related images are not loaded for any reason
@@ -343,9 +297,6 @@ jQuery(document).ready
                   {
                     // load all items
                     itemsToLoad.removeClass('hidden').addClass('portfolio-item');
-
-                    // re-intiate shuffle
-                    if ( $().shuffle ) { $grid.shuffle('appended', itemsToLoad); };
 
                     // needed to fix suffle gutter bug
                     // and show the hidden items correctly
