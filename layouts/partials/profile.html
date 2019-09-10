@@ -1,10 +1,5 @@
-<!-- ========================================= -->
-<!-- $PROFILE SECTION                          -->
-<!-- ========================================= -->
-
 <section id="profile" class="main-block">
   <div class="container text-center">
-
     <!-- #PROFILE TITLE -->
     <div class="main-title text-left wow fadeIn">
       <div class="main-title__inner">
@@ -15,7 +10,8 @@
         </div>
         <div class="main-title__right">
           <p class="serif em regular h6">
-            Developing web applications from frontend to backend and mentoring junior developers are my current duty.
+            Developing web applications from frontend to backend and mentoring
+            junior developers are my current duty.
           </p>
         </div>
       </div>
@@ -23,12 +19,16 @@
 
     <!-- #PROFILE CONTENT -->
     <div class="row main-block__padder text-left">
-
       <!-- #PROFILE PHOTO -->
       <div class="col-lg-4 col-md-6 col-lg-push-4 text-center wow fadeInUp">
         <div class="inline-block photo-column-inner">
           <div class="xlg-rounded-box profile-image-holder center-block">
-            <img src="/assets/images/avatar.jpg" class="img-responsive" style="width: 100%" alt="Profile image">
+            <img
+              src="/assets/images/avatar.jpg"
+              class="img-responsive"
+              style="width: 100%"
+              alt="Profile image"
+            />
           </div>
         </div>
       </div>
@@ -40,13 +40,29 @@
           <ul class="padder list-unstyled info-list">
             <li>Name : {{ $.Site.Title }}</li>
             <li>Age : {{ sub now.Year 1991 }} years old</li>
-            <li>Phone : <a href="tel:{{ $.Site.Data.general.phone }}">{{ $.Site.Data.general.phone }}</a></li>
-            <li>Email : <a href="mailto:{{ $.Site.Data.general.email }}">{{ $.Site.Data.general.email }}</a></li>
+            <li>
+              Phone :
+              <a href="tel:{{ $.Site.Data.general.phone }}">
+                {{ $.Site.Data.general.phone }}
+              </a>
+            </li>
+            <li>
+              Email :
+              <a href="mailto:{{ $.Site.Data.general.email }}">
+                {{ $.Site.Data.general.email }}
+              </a>
+            </li>
           </ul>
           <ul class="list-inline list-gutter-xs padder h5 bare-social-menu">
             {{ range $.Site.Data.socials }}
             <li>
-              <a href="{{ .item.link }}" class="{{ .item.name }}-color" aria-label="{{ .item.name }}" rel="noopener noreferrer" target="_blank">
+              <a
+                href="{{ .item.link }}"
+                class="{{ .item.name }}-color"
+                aria-label="{{ .item.name }}"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i class="fa fa-{{ .item.name }}"></i>
               </a>
             </li>
@@ -60,14 +76,15 @@
         <div>
           <h5 class="text-capitalize">Summary</h5>
           <p class="padder">
-            I am working as the fullstack developer for {{ sub now.Year 2013 }} years. Had been facing a lot of issues, success, failure, and
-            gaining so much experience from all of those. I love being fullstack because there are tremendous
-            possibilities and it allow me to learn continuously.
+            I am working as the fullstack developer for
+            {{ sub now.Year 2012 }} years. I have been experiencing a lot of
+            issues and different outcomes from them and that simple thing making
+            me a more experienced developer every day. I really love being a
+            fullstack developer because there are tremendous possibilities and
+            it allows me to learn continuously.
           </p>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
