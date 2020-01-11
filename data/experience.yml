@@ -1,40 +1,45 @@
 - item:
+    company: Songo
+    location: Remote
+    image: songo.jpg
+    dates: 2018-06 - now
+    position: Senior Fullstack Developer
+    description: >
+                  I am encountering exciting experiences while working on this
+                  project. Work with experienced people, participate in the
+                  decision-making process, and work in every part of the
+                  development backend, frontend, developer experience,
+                  deployment, infra management.
+
+- item:
     company: Grab
     location: Singapore
-    image: grab.png
+    image: grab.jpg
     dates: 2017-12 - now
-    position: Senior fullstack developer
+    position: Senior Software Engineer
     description: >
-                  Working in company's internal platform that is mostly being used for internal company matters. Having
-                  a good chance to take a look at fast growing company and learning a lot from so talented people for
-                  coding and non coding things.
+                  It is an excellent opportunity to take a look at a
+                  fast-growing company and learning a lot from talented people
+                  in coding and non-coding skills.
 
 - item:
-    company: Unimedia Solutions
+    company: Unimedia, Unimedia Solutions
     location: Mongolia
     image: unimedia.jpg
-    dates: 2017-01 - 2017-12
-    position: Senior fullstack developer
+    dates: 2014-05 - 2017-12
+    position: Senior Fullstack Developer
     description: >
-                  Didn't change a much after previous representative agent became branch company. Still Rails, AWS, and
-                  AngularJS were main topics.
-
-- item:
-    company: Unimedia
-    location: Mongolia
-    image: unimedia.jpg
-    dates: 2014-01 - 2016-12
-    position: Fullstack developer
-    description: >
-                  I had been working on several projects that are based on plenty of technologies. Had a good chance to
-                  work on devops, sysops jobs since there wasn't any role in the company.
+                  I had worked on a representative agent of Japan company
+                  “Unimedia” in Mongolia for 2.5 years as a fullstack developer
+                  then promoted to a senior fullstack developer just before 2017.
 
 - item:
     company: Aptech Worldwide Mongolia
     location: Mongolia
     image: aptech.jpg
-    dates: 2012-01 - 2014-01
+    dates: 2012-04 - 2014-05
     position: Teacher
     description: >
-                  Was teaching basic knowledge of computer, web and desktop application development, mysql, mssql, basic
-                  linux usage etc...
+                  I was teaching operating systems, computer parts, network,
+                  desktop application development, and web application
+                  development practically.
