@@ -25,6 +25,7 @@
   > $CONTACT FORMS
 
 */
+Sentry.init({ dsn: 'https://779562b4bacf4baf8663c9b519d2adca@sentry.io/1879159' });
 
 jQuery(document).ready
 (
