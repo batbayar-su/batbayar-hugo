@@ -1,10 +1,10 @@
 - item:
-    name: Gamma
+    name: Gamma and Omega
     link: https://grab.com
     image: gamma.jpg
     description: >
-                  Internal platform which is used for company employees, mostly customer experience team. Following
-                  agile development so eveything flows in this project.
+                  Internal tools which are used by company employees, mostly customer experience team. Following
+                  agile development so eveything flows in here.
 
 - item:
     name: Abcdtask
