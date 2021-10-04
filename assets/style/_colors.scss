@@ -5,14 +5,14 @@
 /*
 
 	> $WHITE - #FFF
-	> $MUTED GRAY - #E5E5E5
+	> $MUTED GRAY - #999
 	> $LIGHT GRAY - #D4D4D4
 	> $GRAY - #999999
 	> $DARK GRAY - #4D4D4D
 	> $DARKER GRAY - #323232
 	> $DARKER GRAY SHADE - #2E2E2E
 	> $TRANSPARENT BLACK - #000000
-	> $BLUE ( MAIN ) - #34BBFF
+	> $BLUE ( MAIN ) - #0AF
 	> $DARK BLUE - #30B2F2
 	> $DARKER BLUE - #1F2426
 	> $BALE BLUE - #DFEAF0
@@ -155,7 +155,7 @@
 { border-color: rgba(255, 255, 255, 0.2); }
 
 /* ========================================= */
-/*	$MUTED GRAY - #E5E5E5                     */
+/*	$MUTED GRAY - #999                     */
 /* ========================================= */
 
 /* #MUTED GRAY BORDER
@@ -185,21 +185,21 @@
 .tweets-list li + li,
 .comments-list,
 .comment
-{ border-color: #e5e5e5 }
+{ border-color: #999 }
 
 /* #MUTED GRAY COLOR
 /* =================== */
 
 /* main title */
 .main-title i
-{ color: #e5e5e5; }
+{ color: #999; }
 
 /* #MUTED GRAY BACKGROUNDS
 /* ======================= */
 
 /* skills */
 .skill-meter > div
-{ background-color: #e5e5e5 }
+{ background-color: #999 }
 
 /* ========================================= */
 /*	$LIGHT GRAY - #D4D4D4                    */
@@ -214,7 +214,7 @@ footer .hollow-social-menu a,
 { color: #d4d4d4; }
 
 /* ========================================= */
-/*	$GRAY - #888888                          */
+/*	$GRAY - #4d4d4d                             */
 /* ========================================= */
 
 /* #GRAY COLOR
@@ -222,7 +222,7 @@ footer .hollow-social-menu a,
 
 /* main title */
 .main-title em
-{ color: #888; }
+{ color: #4d4d4d; }
 
 body,
 
@@ -247,7 +247,7 @@ body,
 
 /* contact */
 .captcha-holder .captcha
-{ color: #888; }
+{ color: #4d4d4d; }
 
 /* #GRAY BACKGROUND
 /* ================== */
@@ -255,7 +255,7 @@ body,
 /* resume */
 .timeline-rail::before,
 .timeline-rail::after
-{ background-color: #888; }
+{ background-color: #4d4d4d; }
 
 /* ========================================= */
 /*	$DARK GRAY - #4D4D4D                      */
@@ -320,7 +320,7 @@ footer
 { background-color: rgba(0, 0, 0, 0.65); }
 
 /* ========================================= */
-/*	$BLUE ( MAIN ) - #34BBFF                  */
+/*	$BLUE ( MAIN ) - #0AF                    */
 /* ========================================= */
 
 /* #BLUE COLOR
@@ -364,7 +364,7 @@ footer
 
 /* contact */
 .captcha-holder
-{ background-color: #34bbff }
+{ background-color: #0AF }
 
 /* #BLUE BACKGROUND
 /* ======================== */
@@ -389,7 +389,7 @@ a,
 
 /* blog */
 .breadcrumb > .active
-{ color: #34bbff }
+{ color: #0AF }
 
 /* #TRANSPARENT BACKGROUND
 /* ======================== */
@@ -415,12 +415,12 @@ input:focus,
 textarea:focus,
 select:focus,
 .form-control:not([readonly]):focus
-{ border-color: #34bbff; }
+{ border-color: #0AF; }
 
 @media (min-width: 992px)
 {
 	.navbar .navbar-nav > li > a:hover,
-	.navbar .navbar-nav > li > a.mPS2id-highlight { border-color: #34bbff; }
+	.navbar .navbar-nav > li > a.mPS2id-highlight { border-color: #0AF; }
 }
 
 /* ========================================= */
