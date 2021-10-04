@@ -1,15 +1,52 @@
 - item:
+    company: Klarna
+    location: Berlin
+    image: klarna.jpg
+    dates: 2021-01 - now
+    position: Senior Software Engineer
+    description: >
+      Klarna provides online financial services such as online storefronts, direct payments, post-purchase payments, and
+      more. Storefronts need to attract customers, and the deal is one of the significant factors for that.
+    duties: 
+      - Develop cross-platform, extensive, testable code in Graphql on NodeJS backend and React Native frontend projects.
+      - Work on new features from top to bottom. Taking ownership, planning, observing implementation, and A/B testing.
+      - Collaborate with other teams to provide fast solutions, cross-team features.
+      - Occasionally be an oncall person and keep system stability safe and maintain observing tools.
+      - Mentor new joiners to the team.
+
+
+- item:
+    company: Canva
+    location: Remote
+    image: canva.jpg
+    dates: 2020-09 - 2020-12
+    position: Frontend Engineer (Consultant)
+    description: >
+      Canva is a graphic design platform for every people, and they provide their platform in 100+ languages and under
+      accessibility standards. Canva has a regional printing service where customers can print their designs on flyers,
+      business cards, stickers, cups, t-shirts etc...
+    duties:
+      - Work on implementing features and fixing bugs on the public-facing frontend app to enable more printing options and flexibility.
+      - Deliver multi-platform, extensive, testable code. Improve stability and test code coverage of existing code.
+      - Make react components more accessibility friendly.
+      - Observe system stability and act fast on delivering a solution.
+      - Increase product effectiveness by work with analytics teams to try different approaches.
+
+- item:
     company: Songo
     location: Remote
     image: songo.jpg
-    dates: 2019-06 - now
-    position: Software Engineer
+    dates: 2019.06 - 2020-06
+    position: Consultant
     description: >
-                  Contribute in the decision-making process, and participate
-                  in every part of the development backend, frontend, 
-                  developer experience, deployment, infra management giving
-                  me very good experience to understand every aspect of the 
-                  product.
+      I encountered exciting experiences while working on this project. Work with experienced people, participate in the
+      decision-making process, and work in every part of the development backend, frontend, developer experience,
+      deployment, infra management.
+    duties:
+      - Designed backend rest APIs, having a minimal workforce in mind, using Postgresql, RoR, Postgrest, Vert.x, Angular, Vue, Firebase.
+      - I have designed and implemented continuous deployment with Gitlab CI. As a result, the company securely kept sensitive data and drastically reduced deployment time and failure.
+      - Collaborate with different teams with different experiences. So need to work with members who are comfortable with diverse technologies.
+      - Helped the teams to apply good practices about hosting, managing services that help increase availability, and reducing costs.
 
 - item:
     company: Grab
@@ -18,31 +55,42 @@
     dates: 2017-12 - 2020-08
     position: Senior Software Engineer
     description: >
-                  I spend one of the great moments in here. It was great
-                  opportunity to work and take a look at a fast-growing,
-                  well-structured company. People working in Grab was awesome
-                  and I learned a lot from super talents.
+      It was an excellent opportunity to take at a fast-growing company and learn a lot from talented people in both
+      coding and non-coding skills.
+    duties:
+      - Every day, I work with well-structured, dedicated teams to deliver reliable, scalable, testable code for React, RoR, Golang, GraphQL projects.
+      - Work following an agile development cycle, and it was interesting to see the inequality of the waterfall method.
+      - I participated in immersion programs to understand the pain points of users and resolved the raised issues. Hence the productivity and experience of users are improved.
+      - Operate close with SRE to implement new features and upgrade the existing infrastructure. We use Terraform, Ansible, and Jenkins in our infra and deployment.
+      - Maintained the stability of the projects by completing critical 3rd party integrations and improving code quality of legacy code.
+      - Mentored two new members and helped them settle down and understand the workflow.
 
 - item:
-    company: Unimedia, Unimedia Solutions
-    location: Mongolia
+    company: Unimedia
+    location: Ulaanbaatar
     image: unimedia.jpg
     dates: 2014-05 - 2017-12
-    position: Senior Fullstack Developer
+    position: Software Engineer (Senior)
     description: >
-                  Ruby was main language for my everyday work and I really
-                  felt in love with it. Company was very good organized, small
-                  and fast growing so opportunities were everywhere. I am
-                  proudly one of the first members of Devops team.
+      I had worked at the Japanese company “Unimedia” in Mongolia for 2.5 years as a software engineer then promoted to
+      a senior level just before 2017.
+    duties:
+      - Operate jointly with engineering managers to keep AWS-based cloud environments scalable, stable, and cost-efficient.
+      - I have installed a rack server in the office to increase development experience. The result was exceptional.
+      - Run internal training for teams that prepared them to maintain aws infra and act fast on aws related incidents.
+      - Served as a software engineer on a caching system, a crowd-sourcing platform, and a web crawler and made them distributed and reliable.
+      - Mentored two interns and three new joiners and guided them through the work cycle and environment.
 
 - item:
     company: Aptech Worldwide Mongolia
-    location: Mongolia
+    location: Ulaanbaatar
     image: aptech.jpg
     dates: 2012-04 - 2014-05
     position: Teacher
     description: >
-                  I was teaching operating systems, computer parts, network,
-                  desktop application development, and web application
-                  development practically. I would like to say the knowledge
-                  gained from here is backing me up for entire career.
+      I was teaching operating systems, computer parts, networking, desktop applications, and web applications
+      development. I would say the knowledge gained from here is backing me up until now.
+    duties:
+      - Teach various development languages and technologies (HTML, CSS, Javascript, PHP, SQL, C#, Java, etc…) and  explain how the computer parts work, and examine their components.
+      - Assistant in administrating and maintaining a windows server and network to provide secure, fast, stable studying and working environment.
+      - Increase overall content quality by modifying and rearranging premade subjects and topics

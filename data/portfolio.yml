@@ -1,38 +1,55 @@
 - item:
+    name: Klarna
+    link: https://klarna.com
+    image: klarna.jpg
+    description: >
+      Klarna provides online financial services such as payments for online storefronts, direct payments, post-purchase
+      payments, and more.
+
+- item:
+    name: Canva
+    link: https://canva.com
+    image: canva.jpg
+    description: >
+      Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents,
+      and other visual content.
+
+- item:
     name: Gamma and Omega
     link: https://grab.com
     image: gamma.jpg
     description: >
-                  Internal tools which are used by company employees, mostly customer experience team. Following
-                  agile development so eveything flows in here.
+      Gamma is internal management system which used by employees and customer experience team to get insightful
+      information about specific components' info of business. Omega is system used to manage exclusive, targetted
+      deals.
 
 - item:
     name: Abcdtask
     link: https://abcdtask.com
     image: abcdtask.jpg
     description: >
-                  Crowdsourcing platform that is co-operating with several same service providers. Yahoo Japan, Shufti,
-                  Netmile are some of the co-operators.
+      Crowdsourcing platform that is co-operating with several same service providers. Yahoo Japan, Shufti, Netmile are
+      some of the co-operators.
 
 - item:
     name: Crowdjob
     link: https://crowd-job.com
     image: crowdjob.jpg
     description: >
-                  Abcdtask-s landing page and introduction website.
+      Abcdtask's landing and internal management systems.
 
 - item:
     name: Sugotoku
     link: https://www.dcm-b.jp/cs/top.html
     image: sugotoku.jpg
     description: >
-                  Advertisement system that has tracking system in it. Being part of back-end development team. This url
-                  is front-end side.
+      Multi companies cooperated advertisement system and I was part of back-end development team for tracking. This is
+      one of the frontend systems.
 
 - item:
     name: Ragusa Tour
     link: http://ragusa-tour.com
     image: ragusatour.jpg
     description: >
-                  Introduction site of tourist guide and agent company. Worked on this site as solo freelancer.
-                  Developed in Ruby on Rails.
+      Tourist guide and agency company's website. Web was about getting general information about company and tavel
+      routes and registration. Worked on this site as solo freelancer. Developed in Ruby on Rails.
