@@ -1,3 +1,3 @@
-This is Hugo for batbayar.ml
+This is Hugo for bagi.mn
 
 Personal portfolio, resume, experimentals.
