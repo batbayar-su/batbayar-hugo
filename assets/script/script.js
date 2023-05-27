@@ -4,12 +4,13 @@
 
 /*
 
+  > $SECURITY PATCHES
+
   > $CONDITIONAL LOADERS
 
     > #WOW PLUGIN
     > #STELLAR
 
-  > $PRELOADER
   > $FULLSCREEN SECTION
   > $NAVIGATION
 
@@ -21,9 +22,6 @@
 
     > #LIGHTBOX
     > #SHOW MORE ITEMS
-
-  > $CONTACT FORMS
-
 */
 
 jQuery(document).ready
@@ -31,6 +29,14 @@ jQuery(document).ready
   function ($)
   {
     'use strict';
+
+    /* ========================================= */
+    /* $SECURITY PATCHES                         */
+    /* ========================================= */
+
+    jQuery.htmlPrefilter = function( html ) {
+      return html;
+    };
 
     /* ========================================= */
     /* $CONDITIONAL LOADERS                      */
@@ -332,151 +338,5 @@ jQuery(document).ready
       loadMoreBtn.attr('class', loadMoreBtnOriginalClasses);
       loadMoreBtn.text( loadMoreBtnOriginalText );
     };
-
-    /* ========================================= */
-    /* $CONTACT FORMS                            */
-    /* ========================================= */
-
-       // config
-    var captcha_error_message = 'Invalid captcha',
-       submit_success_message = 'Your message has been successfully sent',
-
-       // elements
-       form = $('.contact-form'),
-       captcha_numbers = $('.captcha-number'),
-       messageBox,
-       messageBoxInner;
-
-    //define function to get form data
-    function get_related_form_data ( current_form )
-    {
-          var inputs = {};
-          current_form.serializeArray().map(function(item, index) {
-            inputs[item.name] = item.value;
-          });
-          return inputs;
-    };
-
-    // generate random captcha numbers
-    function generate_captcha_numbers ( inputs )
-    {
-      inputs.each
-      (
-        function ( index )
-        {
-          inputs.eq( index ).val( Math.floor(Math.random() * 6) + 1 );
-        }
-      );
-    };
-
-    // show alert message
-    function show_message ( message, status )
-    {
-      messageBox.removeClass('hidden');
-      messageBoxInner.text( message );
-      if ( status == "success" )
-      {
-        messageBox.removeClass('alert-danger').addClass('alert-success');
-      }
-      else
-      {
-        messageBox.removeClass('alert-success').addClass('alert-danger');
-      }
-    };
-
-    // generate captcha for all
-    // inputs on first load
-    generate_captcha_numbers( captcha_numbers );
-
-    // submit
-    form.on
-    (
-      'submit',
-      function ( event )
-      {
-        // prevent default page redirection
-        event.preventDefault();
-
-           // elements
-        var $self = $(this),
-           submitBtn = $self.find('input[type="submit"]'),
-           captcha = $self.find('.captcha'),
-           current_captcha_numbers = $self.find('.captcha-number'),
-
-           // getters
-           related_php_processor_file = $self.attr('action'),
-           submitBtnOriginalText = submitBtn.val(),
-           calculated_captcha_value = parseInt(current_captcha_numbers.eq(0).val()) + parseInt(current_captcha_numbers.eq(1).val()),
-           captchaValue = parseInt(captcha.val());
-
-        // alert message variables re-assignment
-        messageBox = $self.parent().find('.alert');
-        messageBoxInner = messageBox.find('p');
-
-        // hide message box
-        messageBox.addClass('hidden');
-
-        // strat processing status
-        submitBtn.addClass('em disabled').val('Processing...');
-
-        // verify captcha value
-        if ( captchaValue === calculated_captcha_value )
-        {
-          // make ajax request
-          $.post
-          (
-            related_php_processor_file,
-            get_related_form_data( $self ),
-            function ( response, textStatus, jqXHR )
-            {
-              // reset submit button
-              submitBtn.removeClass('em disabled').val( submitBtnOriginalText );
-
-              // test request status
-              if( jqXHR.status == 200 && textStatus == 'success' )
-              {
-                if( 'success' == response.status )
-                {
-                  // reset form (trigger reset event)
-                  $self.trigger('reset');
-
-                  // success action
-                  show_message( submit_success_message, "success" );
-
-                  // insert new capthca numbers
-                  // for current form captcha inputs
-                  generate_captcha_numbers( current_captcha_numbers );
-                }
-                else
-                {
-                  // error action
-                  show_message( response.data );
-                };// eof: else
-              };// eof: if
-            },
-            'json'
-          );// eof: post
-        }
-
-        else
-        {
-          //error
-          show_message( captcha_error_message );
-
-          // reset processing status
-          submitBtn.removeClass('em disabled').val( submitBtnOriginalText );
-        }// eof: else
-      }
-    );
-
-    // hide alert message on close button click
-    $('[data-hide="alert"]').click
-    (
-      function ()
-      {
-        $(this).parent().addClass('hidden');
-      }
-    );
-
   }
 );
