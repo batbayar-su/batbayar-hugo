@@ -1,0 +1,13 @@
+{
+  "name": "batbayar-hugo",
+  "version": "1.0.0",
+  "description": "bagi.mn made with hugo",
+  "repository": "git@github.com:batbayar-su/batbayar-hugo.git",
+  "author": "batbayar.sukhbaatar@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}

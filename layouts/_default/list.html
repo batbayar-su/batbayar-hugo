@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-{{ partial "head" . }}
+{{ partial "head.html" . }}
+
 <body>
-  <section id="preloader"></section>
-  {{ partial "blog_header" . }}
-  {{ partial "navigation" . }}
-  <main>
-    {{ range .Paginator.Pages }}
+    {{/* <section id="preloader"></section> */}}
+    {{ partial "blog_header.html" . }}
+    {{ partial "navigation.html" . }}
+    <main>
+        {{ range .Paginator.Pages }}
         <article>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <p>{{ .Summary }}</p>
         </article>
-    {{ end }}
-    <nav>
-        {{ if .Paginator.HasPrev }}
+        {{ end }}
+        <nav>
+            {{ if .Paginator.HasPrev }}
             <a href="{{ .Paginator.Prev.URL }}">PREV</a>
-        {{ end }}
-        {{ if .Paginator.HasNext }}
+            {{ end }}
+            {{ if .Paginator.HasNext }}
             <a href="{{ .Paginator.Next.URL }}">NEXT</a>
-        {{ end }}
-    </nav>
-  </main>
-  {{ partial "footer" . }}
-  {{ partial "script" . }}
+            {{ end }}
+        </nav>
+    </main>
+    {{ partial "footer.html" . }}
+    {{/* {{ partial "script.html" . }} */}}
 </body>
+
 </html>
