@@ -235,6 +235,11 @@
 }
 
 /* fullscreen parallax home */
+.fullscreen {
+  height: 100vh;
+  width: 100%;
+}
+
 .title-box {
   position: relative;
   text-shadow: 0 1px 1px;
@@ -273,8 +278,7 @@
 
 .profession-box h5 {
   position: relative;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 0 5px;
   padding: 14px 14px;
 }
 

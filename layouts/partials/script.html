@@ -1,13 +1,12 @@
-{{ $jquery := resources.Get "script/libs/jquery-1.12.4.min.js" }}
-{{ $bootstrap := resources.Get "script/libs/bootstrap.min.js" }}
+{{ $jquery := resources.GetRemote "https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" }}
+{{ $bootstrap := resources.GetRemote "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" }}
 {{ $libJS := slice $jquery $bootstrap | resources.Concat "script/libraries.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $libJS.Permalink }}"></script>
 {{ $PageScroll2id := resources.Get "script/plugins/jquery.malihu.PageScroll2id.min.js" }}
 {{ $sticky := resources.Get "script/plugins/jquery.sticky-kit.min.js" }}
 {{ $magnific := resources.Get "script/plugins/jquery.magnific-popup.min.js" }}
-{{ $stellar := resources.Get "script/plugins/jquery.stellar.min.js" }}
 {{ $wow := resources.Get "script/plugins/wow.min.js" }}
-{{ $pluginJS := slice $PageScroll2id $sticky $magnific $stellar $wow | resources.Concat "script/plugins.js" | resources.Minify | resources.Fingerprint }}
+{{ $pluginJS := slice $PageScroll2id $sticky $magnific $wow | resources.Concat "script/plugins.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $pluginJS.Permalink }}"></script>
 {{ $script := resources.Get "script/script.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>

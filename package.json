@@ -9,5 +9,9 @@
   "devDependencies": {
     "prettier": "^2.8.8",
     "prettier-plugin-go-template": "^0.0.13"
+  },
+  "scripts": {
+    "start": "hugo server",
+    "build": "hubo"
   }
 }

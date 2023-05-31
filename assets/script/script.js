@@ -9,9 +9,7 @@
   > $CONDITIONAL LOADERS
 
     > #WOW PLUGIN
-    > #STELLAR
 
-  > $FULLSCREEN SECTION
   > $NAVIGATION
 
     > #STICKY NAVBAR
@@ -29,14 +27,6 @@ jQuery(document).ready
   function ($)
   {
     'use strict';
-
-    /* ========================================= */
-    /* $SECURITY PATCHES                         */
-    /* ========================================= */
-
-    jQuery.htmlPrefilter = function( html ) {
-      return html;
-    };
 
     /* ========================================= */
     /* $CONDITIONAL LOADERS                      */
@@ -76,47 +66,10 @@ jQuery(document).ready
 
           new WOW().init({ offset: 50 });
 
-          /* #STELLAR */
-          /* ============================ */
-
-          $(window).stellar
-          (
-            {
-              horizontalScrolling : false,
-              resposive           : true
-            }
-          );
-
         }// eof: function
       );// eof: done
 
     };//eof: if
-
-    /* ========================================= */
-    /* $FULLSCREEN SECTION                       */
-    /* ========================================= */
-
-    var fullscreenContainer = $('.fullscreen');
-
-    // get window height and set it to '.fullscreen'
-    // element on page load and on resize
-    function setViewportHeight ()
-    {
-      var viewportHeight = $(window).height();
-      fullscreenContainer.css('height', viewportHeight);
-    };// eof:getViewportHeight
-
-    // update "height" property on first page load
-    setViewportHeight();
-
-    $(window).resize
-    (
-      function ()
-      {
-        // update "height" property on resize
-        setViewportHeight();
-      }
-    );// eof: resize
 
     /* ========================================= */
     /* $NAVIGATION                               */
