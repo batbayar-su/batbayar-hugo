@@ -1,3 +1,3 @@
-This is Hugo for bagi.mn
+Built with hugo for bagi.mn
 
 Personal portfolio, resume, experimentals.

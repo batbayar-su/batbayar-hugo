@@ -928,7 +928,10 @@
   margin-left: -23px;
 
   background-color: transparent;
-  box-shadow: 6px 0 0 0, 20px 0 0 0, 34px 0 0 0;
+  box-shadow:
+    6px 0 0 0,
+    20px 0 0 0,
+    34px 0 0 0;
 }
 
 .post:last-child::after {

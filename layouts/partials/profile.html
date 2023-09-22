@@ -23,7 +23,12 @@
       <div class="col-lg-4 col-md-6 col-lg-push-4 text-center wow fadeInUp">
         <div class="inline-block photo-column-inner">
           <div class="xlg-rounded-box profile-image-holder center-block">
-            <img src="/assets/images/avatar.jpg" class="img-responsive" style="width: 100%" alt="Profile image" />
+            <img
+              src="/assets/images/avatar.jpg"
+              class="img-responsive"
+              style="width: 100%"
+              alt="Profile image"
+            />
           </div>
         </div>
       </div>
@@ -50,25 +55,33 @@
           </ul>
           <ul class="list-inline list-gutter-xs padder h5 bare-social-menu">
             {{ range $.Site.Data.socials }}
-            <li>
-              <a href="{{ .item.link }}" class="{{ .item.name }}-color" aria-label="{{ .item.name }}"
-                rel="noopener noreferrer" target="_blank">
-                <i class="fa fa-{{ .item.name }}"></i>
-              </a>
-            </li>
+              <li>
+                <a
+                  href="{{ .item.link }}"
+                  class="{{ .item.name }}-color"
+                  aria-label="{{ .item.name }}"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fa fa-{{ .item.name }}"></i>
+                </a>
+              </li>
             {{ end }}
           </ul>
         </div>
       </div>
 
       <!-- #PROFILE STORY -->
-      <div class="col-lg-4 col-lg-pull-8 col-xs-12 text-left story-column wow fadeInUp">
+      <div
+        class="col-lg-4 col-lg-pull-8 col-xs-12 text-left story-column wow fadeInUp"
+      >
         <div>
           <h5 class="text-capitalize">Summary</h5>
           <p class="padder">
-            Batbayar has been working as a software engineer for ten years. Working on a full stack encourages him to
-            learn new every day, which he finds very enjoyable. This also gives him a broad range of options for
-            personal and professional development.
+            Batbayar has been working as a software engineer for ten years.
+            Working on a full stack encourages him to learn new every day, which
+            he finds very enjoyable. This also gives him a broad range of
+            options for personal and professional development.
           </p>
         </div>
       </div>

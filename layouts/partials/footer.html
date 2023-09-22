@@ -3,12 +3,16 @@
     <ul class="list-inline hollow-social-menu h5 list-gutter-xs">
       {{ .Scratch.Set "delay" 0 }}
       {{ range $.Site.Data.socials }}
-      <li class="wow rollIn" data-wow-delay='{{ $.Scratch.Get "delay" }}s'>
-        <a href="{{ .item.link }}" class="sm-rounded-box {{ .item.name }}-bg" aria-label="{{ .item.name }}">
-          <i class="fa fa-{{ .item.name }}"></i>
-        </a>
-        {{ $.Scratch.Add "delay" 0.2 }}
-      </li>
+        <li class="wow rollIn" data-wow-delay="{{ $.Scratch.Get "delay" }}s">
+          <a
+            href="{{ .item.link }}"
+            class="sm-rounded-box {{ .item.name }}-bg"
+            aria-label="{{ .item.name }}"
+          >
+            <i class="fa fa-{{ .item.name }}"></i>
+          </a>
+          {{ $.Scratch.Add "delay" 0.2 }}
+        </li>
       {{ end }}
     </ul>
   </div>

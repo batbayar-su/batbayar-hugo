@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
-{{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 
-<body>
-  {{/* <section id="preloader"></section> */}}
-  {{ partial "blog_header.html" . }}
-  {{ partial "navigation.html" . }}
-  <section class="main-block">
-    <main>
-      <article>
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
-      </article>
-    </main>
-  </section>
-  {{ partial "footer.html" . }}
-  {{/* {{ partial "script.html" . }} */}}
-</body>
 
+  <body>
+    {{/* <section id="preloader"></section> */}}
+    {{ partial "blog_header.html" . }}
+    {{ partial "navigation.html" . }}
+    <section class="main-block">
+      <main>
+        <article>
+          <h1>{{ .Title }}</h1>
+          {{ .Content }}
+        </article>
+      </main>
+    </section>
+    {{ partial "footer.html" . }}
+    {{/* {{ partial "script.html" . }} */}}
+  </body>
 </html>

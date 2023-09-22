@@ -20,15 +20,15 @@
       <!-- TIMELINE ITEMS -->
       <div class="timeline-items list-gutter-md">
         {{ range $.Site.Data.experience }}
-        <!-- ITEM -->
-        <div class="clearfix timeline-item">
-          <!-- TOOLTIP - BULLET - BOX -->
-          <div class="pull-left clearfix text-center">
-            <!-- TOOLTIP - BULLET -->
-            <div class="inline-block v-middle">
-              <!-- TOOLTIP -->
-              <div
-                class="
+          <!-- ITEM -->
+          <div class="clearfix timeline-item">
+            <!-- TOOLTIP - BULLET - BOX -->
+            <div class="pull-left clearfix text-center">
+              <!-- TOOLTIP - BULLET -->
+              <div class="inline-block v-middle">
+                <!-- TOOLTIP -->
+                <div
+                  class="
                   custom-tooltip
                   bold
                   text-uppercase
@@ -40,17 +40,17 @@
                   fadeInLeft
                   animated
                 "
-                style="visibility: visible; animation-name: fadeInLeft"
-              >
-                <span>
-                  <i class="fa fa-clock-o normal"></i>
-                </span>
-                {{ .item.dates }}
+                  style="visibility: visible; animation-name: fadeInLeft"
+                >
+                  <span>
+                    <i class="fa fa-clock-o normal"></i>
+                  </span>
+                  {{ .item.dates }}
+                </div>
+                <div class="timeline-item-bullet inline-block v-middle"></div>
               </div>
-              <div class="timeline-item-bullet inline-block v-middle"></div>
-            </div>
-            <div
-              class="
+              <div
+                class="
                 timeline-box
                 inline-block
                 v-middle
@@ -60,36 +60,37 @@
                 fadeInRight
                 animated
               "
-              style="background-image: url('assets/images/companies/{{ .item.image }}'); visibility: visible; animation-name: fadeInRight;"
-            ></div>
-          </div>
-          <!-- TIMELINE ITEM CONTENT -->
-          <div
-            class="no-overflow timeline-item-info wow fadeInRight animated"
-            style="visibility: visible; animation-name: fadeInRight"
-          >
-            <h6 class="text-capitalize lh">{{ .item.position }}</h6>
-            <ul
-              class="
+                style="background-image: url('assets/images/companies/{{ .item.image }}'); visibility: visible; animation-name: fadeInRight;"
+              ></div>
+            </div>
+            <!-- TIMELINE ITEM CONTENT -->
+            <div
+              class="no-overflow timeline-item-info wow fadeInRight animated"
+              style="visibility: visible; animation-name: fadeInRight"
+            >
+              <h6 class="text-capitalize lh">{{ .item.position }}</h6>
+              <ul
+                class="
                 list-inline list-gutter-xs
                 serif
                 text-capitalize
                 sm-padder
                 timeline-info-list
-              "\
-            >
-              <li>{{ .item.company }}</li>
-              <li>•</li>
-              <li>{{ .item.location }}</li>
-            </ul>
-            <p class="xs-padder">{{ .item.description }}</p>
-            <ul class="duties-list">
-              {{ range $duty := .item.duties }}
-              <li>{{ $duty }}</li>
-              {{ end }}
-            </ul>
+              "
+                \
+              >
+                <li>{{ .item.company }}</li>
+                <li>•</li>
+                <li>{{ .item.location }}</li>
+              </ul>
+              <p class="xs-padder">{{ .item.description }}</p>
+              <ul class="duties-list">
+                {{ range $duty := .item.duties }}
+                  <li>{{ $duty }}</li>
+                {{ end }}
+              </ul>
+            </div>
           </div>
-        </div>
         {{ end }}
       </div>
     </div>

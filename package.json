@@ -4,14 +4,17 @@
   "description": "bagi.mn made with hugo",
   "repository": "git@github.com:batbayar-su/batbayar-hugo.git",
   "author": "batbayar.sukhbaatar@gmail.com",
-  "license": "MIT",
+  "license": "UNKNOWN",
   "private": true,
   "devDependencies": {
+    "animate.css": "4.1.1",
     "prettier": "3.0.3",
-    "prettier-plugin-go-template": "0.0.15"
+    "prettier-plugin-go-template": "0.0.15",
+    "wow.js": "1.2.2"
   },
   "scripts": {
     "start": "hugo server",
-    "build": "hubo"
+    "build": "hugo",
+    "format": "npx prettier . --write"
   }
 }
