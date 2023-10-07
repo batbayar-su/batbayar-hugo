@@ -1,7 +1,7 @@
 <!-- #EXPERIENCE -->
 <div class="main-block__padder text-left">
   <!-- @EXPERIENCE TITLE -->
-  <div class="table wow fadeIn">
+  <div class="table">
     <div class="table-cell h5 secondary-title__icon">
       <i class="fa fa-flask"></i>
     </div>
@@ -36,9 +36,6 @@
                   inline-block
                   v-middle
                   hidden-xs
-                  wow
-                  fadeInLeft
-                  animated
                 "
                   style="visibility: visible; animation-name: fadeInLeft"
                 >
@@ -56,16 +53,13 @@
                 v-middle
                 hidden-xs
                 text-uppercase
-                wow
-                fadeInRight
-                animated
               "
                 style="background-image: url('assets/images/companies/{{ .item.image }}'); visibility: visible; animation-name: fadeInRight;"
               ></div>
             </div>
             <!-- TIMELINE ITEM CONTENT -->
             <div
-              class="no-overflow timeline-item-info wow fadeInRight animated"
+              class="no-overflow timeline-item-info"
               style="visibility: visible; animation-name: fadeInRight"
             >
               <h6 class="text-capitalize lh">{{ .item.position }}</h6>

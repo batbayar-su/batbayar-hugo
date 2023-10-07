@@ -8,8 +8,6 @@
 
   > $CONDITIONAL LOADERS
 
-    > #WOW PLUGIN
-
   > $NAVIGATION
 
     > #STICKY NAVBAR
@@ -50,28 +48,12 @@ jQuery(document).ready(function ($) {
     },
   }
 
-  // load these scripts for all desktop devices
-  if (!client.mobile.any) {
-    $.when(
-      $.Deferred(function (deferred) {
-        $(deferred.resolve)
-      }),
-    ).done(
-      function () {
-        /* #WOW PLUGIN */
-        /* ============================ */
-
-        new WOW().init({ offset: 50 })
-      }, // eof: function
-    ) // eof: done
-  } //eof: if
-
   /* ========================================= */
   /* $NAVIGATION                               */
   /* ========================================= */
 
   /* #STICKY NAVBAR
-    /* ===================== */
+  /* ===================== */
 
   // this piece of code used to
   // fix the navigation bar at the top
@@ -81,7 +63,7 @@ jQuery(document).ready(function ($) {
   }
 
   /* #SMOOTH SCROLL
-    /* ===================== */
+  /* ===================== */
 
   // smooth scroll page on navigation link click
   // useing page2id plugin
@@ -129,7 +111,7 @@ jQuery(document).ready(function ($) {
   /* ========================================= */
 
   /* #LIGHTBOX
-    /* ===================== */
+  /* ===================== */
 
   // show lightbox with larger image on
   // clicking zoon button in portfolio item
@@ -139,7 +121,7 @@ jQuery(document).ready(function ($) {
   }
 
   /* #SHOW MORE ITEMS
-    /* ===================== */
+  /* ===================== */
 
   // this is a custom script made to
   // lazy load portfolio items which already

@@ -5,8 +5,7 @@
 {{ $PageScroll2id := resources.Get "script/plugins/jquery.malihu.PageScroll2id.min.js" }}
 {{ $sticky := resources.Get "script/plugins/jquery.sticky-kit.min.js" }}
 {{ $magnific := resources.Get "script/plugins/jquery.magnific-popup.min.js" }}
-{{ $wow := resources.Get "script/plugins/wow.min.js" }}
-{{ $pluginJS := slice $PageScroll2id $sticky $magnific $wow | resources.Concat "script/plugins.js" | resources.Minify | resources.Fingerprint }}
+{{ $pluginJS := slice $PageScroll2id $sticky $magnific | resources.Concat "script/plugins.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $pluginJS.Permalink }}"></script>
 {{ $script := resources.Get "script/script.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
