@@ -38,15 +38,17 @@
                     aria-label="open {{ .item.image }} in new tab"
                     target="_blank"
                   ></a>
-                  <a
-                    href="{{ .item.link }}"
-                    class="btn-icon portfolio-icon-btn btn--main-inverted"
-                    rel="noopener noreferrer"
-                    aria-label="link to {{ .item.name }}"
-                    target="_blank"
-                  >
-                    <i class="fa fa-link"></i>
-                  </a>
+                  {{ if .item.link }}
+                    <a
+                      href="{{ .item.link }}"
+                      class="btn-icon portfolio-icon-btn btn--main-inverted"
+                      rel="noopener noreferrer"
+                      aria-label="link to {{ .item.name }}"
+                      target="_blank"
+                    >
+                      <i class="fa fa-link"></i>
+                    </a>
+                  {{ end }}
                   <h6 class="text-uppercase normal md-padder">
                     {{ .item.name }}
                   </h6>
