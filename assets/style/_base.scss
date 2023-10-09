@@ -45,6 +45,10 @@
 /* #BODY
 /* ======================= */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -702,10 +706,13 @@ h6,
 
 #navigation {
   z-index: 100;
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
   line-height: 64px;
+  border-top: none;
 }
 
 .navbar .container {
