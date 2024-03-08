@@ -52,6 +52,11 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  background-color: var(--darker-gray-shade);
+}
+
+.outer-wrapper {
+  background-color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -725,7 +730,7 @@ h6,
   line-height: 62px;
   border-top: 2px solid transparent;
   background: transparent !important;
-  color: #4d4d4d;
+  color: var(--dark-gray);
 }
 
 .navbar .navbar-nav > li > a i {

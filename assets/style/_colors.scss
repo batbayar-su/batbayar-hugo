@@ -221,7 +221,7 @@
 /* footer */
 footer .hollow-social-menu a,
 .copyright-holder {
-  color: #d4d4d4;
+  color: var(--light-gray);
 }
 
 /* ========================================= */
@@ -233,7 +233,7 @@ footer .hollow-social-menu a,
 
 /* main title */
 .main-title em {
-  color: #4d4d4d;
+  color: var(--dark-gray);
 }
 
 body,
@@ -259,7 +259,7 @@ body,
 
 /* contact */
 .captcha-holder .captcha {
-  color: #4d4d4d;
+  color: var(--dark-gray);
 }
 
 /* #GRAY BACKGROUND
@@ -268,7 +268,7 @@ body,
 /* resume */
 .timeline-rail::before,
 .timeline-rail::after {
-  background-color: #4d4d4d;
+  background-color: var(--dark-gray);
 }
 
 /* ========================================= */
@@ -288,7 +288,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #4d4d4d;
+  color: var(--dark-gray);
 }
 
 /* ========================================= */
@@ -303,7 +303,7 @@ h6,
 
 /* footer */
 footer {
-  background-color: #323232;
+  background-color: var(--darker-gray);
 }
 
 /* ========================================= */
@@ -311,7 +311,7 @@ footer {
 /* ========================================= */
 
 .copyright-holder {
-  background-color: #2e2e2e;
+  background-color: var(--darker-gray-shade);
 }
 
 /* ========================================= */
@@ -391,7 +391,7 @@ footer {
 
 /* contact */
 .captcha-holder {
-  background-color: #0af;
+  background-color: var(--main-blue);
 }
 
 /* #BLUE BACKGROUND
@@ -417,7 +417,7 @@ a,
 
 /* blog */
 .breadcrumb > .active {
-  color: #0af;
+  color: var(--main-blue);
 }
 
 /* #TRANSPARENT BACKGROUND
@@ -445,13 +445,13 @@ input:focus,
 textarea:focus,
 select:focus,
 .form-control:not([readonly]):focus {
-  border-color: #0af;
+  border-color: var(--main-blue);
 }
 
 @media (min-width: 992px) {
   .navbar .navbar-nav > li > a:hover,
   .navbar .navbar-nav > li > a.mPS2id-highlight {
-    border-color: #0af;
+    border-color: var(--main-blue);
   }
 }
 
@@ -460,7 +460,7 @@ select:focus,
 /* ========================================= */
 
 a:hover {
-  color: #30b2f2;
+  color: var(--dark-blue);
 }
 
 /* dark blue buttons */
@@ -471,7 +471,7 @@ a:hover {
 
 /* blog */
 .read-more-btn:hover {
-  background-color: #30b2f2;
+  background-color: var(--dark-blue);
 }
 
 /* ========================================= */
@@ -487,7 +487,8 @@ a:hover {
 /* portfolio */
 .portfolio-item h6,
 .portfolio-item em {
-  color: #1f2426;
+  color: var(--darker-blue);
+  background-color: white;
 }
 
 /* #DARKER BLUE BACKGROUND
@@ -510,7 +511,8 @@ a:hover {
 /* blog */
 .view-news-btn,
 .pager li > a {
-  background-color: #1f2426;
+  background-color: var(--darker-blue);
+  color: white;
 }
 
 /* #DARKER BLUE BORDER
@@ -522,7 +524,7 @@ a:hover {
 
 /* contact */
 .contact-tabs-holder {
-  border-color: #1f2426 !important;
+  border-color: var(--darker-blue) !important;
 }
 
 /* ========================================= */
@@ -537,7 +539,7 @@ a:hover {
 
 /* clients */
 #clients {
-  background-color: #dfeaf0;
+  background-color: var(--bale-blue);
 }
 
 /* ========================================= */

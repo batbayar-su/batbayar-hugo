@@ -1,49 +1,55 @@
 coding:
   - item:
-      name:
-      level:
+      name: React
+      level: 5
   - item:
-      name:
-      level:
+      name: Vue
+      level: 5
   - item:
-      name:
-      level:
+      name: Angular
+      level: 5
   - item:
-      name:
-      level:
+      name: React Native
+      level: 5
   - item:
-      name:
-      level:
+      name: NodeJS
+      level: 5
   - item:
-      name:
-      level:
+      name: GraphQL
+      level: 5
   - item:
-      name:
-      level:
+      name: Ruby on Rails
+      level: 4
+  - item:
+      name: AWS, Terraform
+      level: 4
+  - item:
+      name: MySQL, PostgreSQL
+      level: 4
+  - item:
+      name: Firebase
+      level: 4
+  - item:
+      name: Golang, php, linux etc..
+      level: 4
 
 knowledge:
-  item:
-  item:
-  item:
-  item:
-  item:
-  item:
-  item:
-  item:
-  item:
+  - item: Web and mobile development
+  - item: Microfrontend architecture
+  - item: CI/CD process, automation
+  - item: Cloud based solution
+  - item: Infrastructure as a code
+  - item: Relational database
+  - item: NoSQL database
+  - item: Monitoring and troubleshooting
+  - item: Linux server, virtualization
+  - item: Agile, waterfall methodologies
 
-language:
-  - item:
-      name:
-      level:
-  - item:
-      name:
-      level:
 
 personal:
-  item:
-  item:
-  item:
-  item:
-  item:
-  item:
+  - item: Positive work ethic
+  - item: Self independent
+  - item: Team player
+  - item: Mentor
+  - item: Hard worker
+  - item: Team motivator

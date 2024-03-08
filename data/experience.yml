@@ -1,8 +1,23 @@
 - item:
+    company: SAP Signavio
+    location: Berlin
+    image: sap.svg
+    dates: 2022-10 - now
+    position: Senior Developer
+    description: >
+      At SAP Signavio, I work on the Process Transformation Suite, which brings together process mining, management, and automation in one platform.
+      The company promotes an autonomous team structure, which allows me to work on both frontend and backend tasks, from coding to infrastructure.
+    duties:
+      - Develop react shell app for micro frontend architecture. Enable other teams to develop microfrontend modules autonomously and to easily integrate them into the shell app.
+      - Work on infrastructure to make the service more redundant, and highly available. Enhance the monitoring and logging.
+      - Oncall duty to keep system stable, safe and enhance observation tools and metrics.
+      - Improve hiring process and mentor new people to the team.
+
+- item:
     company: Klarna
     location: Berlin
-    image: klarna.jpg
-    dates: 2021-01 - now
+    image: klarna.svg
+    dates: 2021-01 - 2022-10
     position: Senior Software Engineer
     description: >
       Storefronts need to attract customers, and the deal is one of the significant factors. I was working on features
@@ -17,7 +32,7 @@
 - item:
     company: Canva
     location: Remote from Mongolia
-    image: canva.jpg
+    image: canva.svg
     dates: 2020-09 - 2020-12
     position: Frontend Engineer (Consultant)
     description: >
@@ -49,7 +64,7 @@
 - item:
     company: Grab
     location: Singapore
-    image: grab.jpg
+    image: grab.svg
     dates: 2017-12 - 2020-08
     position: Senior Software Engineer
     description: >
