@@ -8,7 +8,8 @@
       At SAP Signavio, I work on the Process Transformation Suite, which brings together process mining, management, and automation in one platform.
       The company promotes an autonomous team structure, which allows me to work on both frontend and backend tasks, from coding to infrastructure.
     duties:
-      - Develop react shell app for micro frontend architecture. Enable other teams to develop microfrontend modules autonomously and to easily integrate them into the shell app.
+      - Develop react shell app for micro frontend architecture.
+      - Enable other teams to develop microfrontend modules autonomously and to easily integrate them into the shell app.
       - Work on infrastructure to make the service more redundant, and highly available. Enhance the monitoring and logging.
       - Oncall duty to keep system stable, safe and enhance observation tools and metrics.
       - Improve hiring process and mentor new people to the team.
@@ -27,6 +28,7 @@
       - Work on new features from top to bottom with a data-driven approach. Taking ownership, planning, observing implementation, and A/B testing.
       - Collaborate with other teams to provide fast efficient solutions for cross-team features.
       - Occasionally be an oncall person and keep system stability safe and maintain observing tools.
+      - Perform threat modeling session to take preventive step from potential risks.
       - Mentor new joiners to the team.
 
 - item:
