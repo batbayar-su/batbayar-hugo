@@ -1,4 +1,8 @@
+# Generated files by hugo
 /public/
 /resources/_gen/
-/assets/script/plugins
+/assets/jsconfig.json
+hugo_stats.json
+
+# npm
 /node_modules/

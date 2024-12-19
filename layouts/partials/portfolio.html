@@ -27,8 +27,7 @@
           <!-- PORTFOLIO ITEM -->
           <div
             class="portfolio-item"
-            style="background-image: url('assets/images/work/thumbnails/{{ .item.image }}');"
-          >
+            style="background-image: url('assets/images/work/thumbnails/{{ .item.image }}');">
             <div class="item-caption">
               <div class="table">
                 <div class="table-cell">
@@ -36,16 +35,14 @@
                     href="/assets/images/work/large/{{ .item.image }}"
                     class="plus-icon plus-icon-big btn--main-inverted"
                     aria-label="open {{ .item.image }} in new tab"
-                    target="_blank"
-                  ></a>
+                    target="_blank"></a>
                   {{ if .item.link }}
                     <a
                       href="{{ .item.link }}"
                       class="btn-icon portfolio-icon-btn btn--main-inverted"
                       rel="noopener noreferrer"
                       aria-label="link to {{ .item.name }}"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <i class="fa fa-link"></i>
                     </a>
                   {{ end }}

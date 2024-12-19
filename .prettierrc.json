@@ -1,14 +1,17 @@
 {
+  "plugins": ["prettier-plugin-go-template"],
   "trailingComma": "all",
   "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "plugins": ["prettier-plugin-go-template"],
+  "goTemplateBracketSpacing": true,
   "overrides": [
     {
       "files": ["*.html"],
       "options": {
-        "parser": "go-template"
+        "parser": "go-template",
+        "bracketSameLine": true,
+        "htmlWhitespaceSensitivity": "ignore"
       }
     }
   ]
