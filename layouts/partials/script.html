@@ -2,5 +2,12 @@
 {{ $bootstrap := resources.GetRemote "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" }}
 {{ $libJS := slice $jquery $bootstrap | resources.Concat "script/libraries.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $libJS.Permalink }}"></script>
-{{ $script := resources.Get "script/script.js" | resources.Minify | resources.Fingerprint }}
+
+{{ $script := resources.Get "script/script.js" }}
+{{- $opts := dict
+  "params" (dict "environment" hugo.Environment)
+  "minify" true
+  "fingerprint" true
+-}}
+{{- $script = $script | js.Build $opts -}}
 <script src="{{ $script.Permalink }}"></script>
