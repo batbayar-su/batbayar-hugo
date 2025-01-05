@@ -6,12 +6,12 @@
         <div class="text-right main-title__left">
           <i class="fa fa-user mega"></i>
           <h2 class="text-uppercase heavy lh padder">profile</h2>
-          <em class="h5 serif em text-capitalize regular">my personal info</em>
         </div>
         <div class="main-title__right">
           <p class="serif em regular h6">
-            Developing webapp, mobile app from frontend to backend and mentoring
-            developers are what I enthusiastic about.
+            I am passionate about developing web applications and mobile
+            applications, from frontend to backend, as well as mentoring fellow
+            developers.
           </p>
         </div>
       </div>
@@ -37,14 +37,8 @@
         <div>
           <h5 class="text-capitalize">personal info</h5>
           <ul class="padder list-unstyled info-list">
-            <li>Name : {{ $.Site.Title }}</li>
+            <li>Name : {{ $.Site.Data.general.name }}</li>
             <li>Age : {{ sub now.Year 1991 }} years old</li>
-            <li>
-              Phone :
-              <a href="tel:{{ $.Site.Data.general.phone }}">
-                {{ $.Site.Data.general.phone }}
-              </a>
-            </li>
             <li>
               Email :
               <a href="mailto:{{ $.Site.Data.general.email }}">
@@ -74,10 +68,11 @@
         <div>
           <h5 class="text-capitalize">Summary</h5>
           <p class="padder">
-            Batbayar has been working as a software engineer for ten years.
-            Working on a full stack encourages him to learn new every day, which
-            he finds very enjoyable. This also gives him a broad range of
-            options for personal and professional development.
+            Batbayar has been working as a software engineer for
+            {{ sub now.Year 2014 }} years. He finds the daily challenges and
+            continuous learnings in full-stack development to be highly
+            rewarding. This approach provides him with a diverse range of
+            opportunities for both personal and professional growth.
           </p>
         </div>
       </div>

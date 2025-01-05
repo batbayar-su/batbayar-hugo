@@ -5,8 +5,8 @@
     dates: 2022-10 - now
     position: Senior Developer
     description: >
-      At SAP Signavio, I work on the Process Transformation Suite, which brings together process mining, management, and automation in one platform.
-      The company promotes an autonomous team structure, which allows me to work on both frontend and backend tasks, from coding to infrastructure.
+      At SAP Signavio, I work on the shell app that brings different micro-frontends into one app. While frontend is the main focus, 
+      the company promotes an autonomous team structure, which allows me to work on frontend and backend tasks, from coding to infrastructure.
     duties:
       - Develop react shell app for micro frontend architecture.
       - Enable other teams to develop microfrontend modules autonomously and to easily integrate them into the shell app.
@@ -21,7 +21,7 @@
     dates: 2021-01 - 2022-10
     position: Senior Software Engineer
     description: >
-      Storefronts need to attract customers, and the deal is one of the significant factors. I was working on features
+      Storefronts need to attract customers, and the deal is one of the significant factors. I was working on deals feature development
       to make deals more reachable, attractive, and targeted to users.
     duties:
       - Develop cross-platform, extensive, testable code in Graphql on NodeJS backend and React, React Native frontend projects.
@@ -58,10 +58,10 @@
       work in every part of the development backend, frontend, developer experience, deployment, and infra management.
 
     duties:
-      - Designed backend rest APIs, having a minimal workforce in mind, using PostgreSQL, PostgRest, Vert.x, Angular, Vue, Firebase.
-      - I have designed and implemented continuous deployment with Gitlab CI. As a result, the company securely kept sensitive data and drastically reduced deployment time and failure.
-      - Collaborate with people with drastically different experiences, so needed to come up with solutions with technology usage.
-      - Helped the teams to apply good practices about hosting, and managing services that helped to increase availability, and reduce costs.
+      - Designed a complete system using PostgreSQL, PostgRest, Vert.x, Vue, and Firebase.
+      - Designed and implemented continuous deployment with Gitlab CI, reducing deployment time and ensuring data security.
+      - Collaborated with developers with diverse experience to develop effective technology solutions.
+      - Improved hosting and service management practices to increase availability and reduce costs.
 
 - item:
     company: Grab
@@ -70,13 +70,12 @@
     dates: 2017-12 - 2020-08
     position: Senior Software Engineer
     description: >
-      It was an excellent opportunity to take at a fast-growing company and learn a lot from talented people in both
-      coding and non-coding skills.
+      It was a great opportunity to work at a fast-growing company and learn both technically and non-technically from talented people.
     duties:
       - I work with well-structured, dedicated teams to deliver reliable, scalable, testable code for React, RoR, Golang, and GraphQL projects.
-      - Operate close with SRE to implement new features and upgrade the existing infrastructure. Terraform, Ansible, and Jenkins were used in infrastructure management and deployment.
-      - Maintained the stability of the projects by completing critical 3rd party integrations and improving code quality of legacy code.
-      - Mentored new members and helped them settle down and understand the workflow.
+      - Operate close with site reliability engineers to develop new functionalities and upgrade the existing infrastructure. Terraform, Ansible, and Jenkins were used in infrastructure management and deployment.
+      - Maintain the stability of the projects by completing critical 3rd party integrations and improving code quality of legacy code.
+      - Mentor new members and help them settle down and understand the team workflow.
       - Participate in immersion programs to understand the pain points of users. It was a unique experience to meet our customers face to face and get their direct feedback.
 
 - item:
@@ -91,9 +90,9 @@
     duties:
       - Operate jointly with engineering managers to keep AWS-based cloud environments scalable, stable, and cost-efficient.
       - I have installed and maintained a rack server in the office to increase development experience. The result was exceptional.
-      - Run internal training for teams that prepared them to maintain aws infrastructure and act fast on aws-related incidents.
-      - Served as a software engineer on a caching system, a crowd-sourcing platform, and a web crawler and made them distributed and reliable.
-      - Mentored two interns and three new joiners and guided them through the work cycle and environment.
+      - Run internal training for teams that prepared them to maintain aws infrastructure and run incident management program.
+      - Worked on a caching system, a crowd-sourcing platform, and a web crawler and made them distributed and reliable.
+      - Mentor interns, new joiners and guided them through the work cycle and culture.
 
 - item:
     company: Aptech Worldwide Mongolia
@@ -102,9 +101,8 @@
     dates: 2012-04 - 2014-05
     position: Teacher
     description: >
-      I was teaching operating systems, computer parts, networking, desktop applications, and web applications
-      development. I would say the knowledge gained from here is backing me up until now.
+      I was teaching operating systems, computer parts, networking, desktop applications, and web applications development.
     duties:
-      - Teach various development languages and technologies (HTML, CSS, Javascript, PHP, SQL, C#, Java, etc…) and  explain how the computer parts work, and examine their components.
+      - Teach various development languages and technologies (HTML, CSS, Javascript, PHP, SQL, C#, Java, etc…) and explain how the computer parts work, and examine their components.
       - Assistant in administrating and maintaining a windows server and network to provide secure, fast, stable studying and working environment.
-      - Increase overall content quality by modifying and rearranging premade subjects and topics
+      - Increase teaching content quality by modifying and rearranging premade subjects and topics.

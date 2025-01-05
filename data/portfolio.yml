@@ -1,4 +1,11 @@
 - item:
+    name: SAP Signavio
+    link: https://www.signavio.com/
+    image: signavio.jpg
+    description: >
+      SAP Signavio helps companies to unleash the power of process with the Process Transformation Suite, bringing together process mining, management, and automation in one platform.
+
+- item:
     name: Klarna
     link: https://klarna.com
     image: klarna.jpg
