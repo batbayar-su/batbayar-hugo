@@ -494,7 +494,7 @@ a:hover {
 /* ======================== */
 
 /* tabs list */
-.tabs-list li.active a,
+.tabs-list li a.active,
 .tabs-list li a:hover,
 .tabs-list li a:focus,
 
@@ -519,11 +519,11 @@ a:hover {
 
 /* tabs list */
 .tabs-list li a,
-.tabs-list li.active a,
 
 /* contact */
 .contact-tabs-holder {
   border-color: var(--darker-blue) !important;
+  color: var(--darker-blue);
 }
 
 /* ========================================= */
