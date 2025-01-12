@@ -1,4 +1,4 @@
-{{ $jquery := resources.GetRemote "https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" }}
+{{ $jquery := resources.GetRemote "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" }}
 {{ $bootstrap := resources.GetRemote "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" }}
 {{ $libJS := slice $jquery $bootstrap | resources.Concat "script/libraries.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $libJS.Permalink }}"></script>

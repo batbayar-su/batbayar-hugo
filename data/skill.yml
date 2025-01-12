@@ -34,21 +34,27 @@ coding:
       level: 4
 
 knowledge:
-  - item: Web and mobile development
-  - item: Microfrontend architecture
-  - item: CI/CD process, automation
-  - item: Cloud based solution
-  - item: Infrastructure as a code
-  - item: Relational database
-  - item: NoSQL database
-  - item: Monitoring and troubleshooting
-  - item: Linux server, virtualization
-  - item: Agile, waterfall methodologies
+  - col:
+      - item: Micro-frontend architecture
+      - item: Web and mobile development
+      - item: CI/CD process, automation
+      - item: Cloud native solution
+  - col:
+      - item: Infrastructure as a code
+      - item: Relational database
+      - item: NoSQL database
+  - col:
+      - item: Monitoring and troubleshooting
+      - item: Linux server, virtualization
+      - item: Agile, waterfall methodologies
 
 personal:
-  - item: Positive work ethic
-  - item: Self independent
-  - item: Team player
-  - item: Mentor
-  - item: Hard worker
-  - item: Team motivator
+  - col:
+      - item: Positive work ethic
+      - item: Self independent
+  - col:
+      - item: Team player
+      - item: Mentor
+  - col:
+      - item: Hard worker
+      - item: Team motivator

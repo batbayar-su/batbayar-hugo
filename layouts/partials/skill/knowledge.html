@@ -1,29 +1,13 @@
 <!-- @KNOWLAGE PANEL -->
 <div class="row tab-pane skills-list text-capitalize" id="skill-panel-2">
-  <div class="col-md-4 col-sm-6 text-center">
-    <ul
-      class="colored-bullets checked-list list-gutter-sm list-unstyled inline-block text-left">
-      <li>API design and development</li>
-      <li>Web, mobile development</li>
-      <li>CI/CD process, management</li>
-      <li>Cloud based solutions</li>
-    </ul>
-  </div>
-  <div class="col-md-4 col-sm-6 text-center">
-    <ul
-      class="colored-bullets checked-list list-gutter-sm list-unstyled inline-block text-left">
-      <li>Multi-cloud maintainance</li>
-      <li>Infrastructure as a code</li>
-      <li>Relational Database</li>
-      <li>NoSQL Database</li>
-    </ul>
-  </div>
-  <div class="col-md-4 col-sm-6 text-center">
-    <ul
-      class="colored-bullets checked-list list-gutter-sm list-unstyled inline-block text-left">
-      <li>Monitoring and troubleshooting</li>
-      <li>Linux servers, Virtualization</li>
-      <li>Agile, Waterfall development</li>
-    </ul>
-  </div>
+  {{ range $.Site.Data.skill.knowledge }}
+    <div class="col-md-4 col-sm-6 text-center">
+      <ul
+        class="colored-bullets checked-list list-gutter-sm list-unstyled inline-block text-left">
+        {{ range .col }}
+          <li>{{ .item }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
 </div>

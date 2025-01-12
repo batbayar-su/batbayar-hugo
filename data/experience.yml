@@ -8,11 +8,11 @@
       At SAP Signavio, I work on the shell app that brings different micro-frontends into one app. While frontend is the main focus, 
       the company promotes an autonomous team structure, which allows me to work on frontend and backend tasks, from coding to infrastructure.
     duties:
-      - Develop react shell app for micro frontend architecture.
-      - Enable other teams to develop microfrontend modules autonomously and to easily integrate them into the shell app.
-      - Work on infrastructure to make the service more redundant, and highly available. Enhance the monitoring and logging.
-      - Oncall duty to keep system stable, safe and enhance observation tools and metrics.
-      - Improve hiring process and mentor new people to the team.
+      - Develop a React-based shell application that hosts all microfrontend applications, creating a cohesive suite experience.
+      - Enable other teams to develop microfrontend modules autonomously and integrate them seamlessly into the shell app.
+      - Work on infrastructure to enhance service redundancy and high availability, and improve monitoring and logging systems.
+      - Perform on-call duties to maintain system stability and safety, and enhance observation tools and metrics.
+      - Improve the hiring process and mentor new team members to ensure a smooth onboarding experience.
 
 - item:
     company: Klarna
