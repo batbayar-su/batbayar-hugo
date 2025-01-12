@@ -31,12 +31,6 @@
 /* buttons */
 .btn,
 
-/* splitted home */
-#splitted-home .btn:hover,
-
-/* widget title inverted */
-.widget-title--inverted h5,
-
 /* social navbar */
 #home .hollow-social-menu a:hover,
 .hollow-social-menu a:hover,
@@ -47,118 +41,35 @@
 .tabs-list > li > a:hover,
 .tabs-list > li.active > a:focus,
 
-/* hobbies */
-.hobbies-list > li h6,
-.hobbies-list > li i.fa,
-
 /* resume */
 .education-timeline .timeline-box span,
 .education-timeline .timeline-box small,
 .custom-tooltip,
 
-/* services */
-.service-icon i,
-
-/* process */
-.process-list span,
-.process-list i,
-.process-list h6,
-
-/* -- work */
+/* work */
 .portfolio-item a,
-.portfolio-item a:hover,
-
-/* pricing */
-.package-title-box,
-.package-title-box h3,
-
-/* hero */
-.hero-header h4,
-.hero-header h1.huge,
-
-/* testimonials */
-#testimonials p,
-#testimonials h6,
-.testimonial-header a:hover,
-
-/* contact */
-.captcha-holder {
+.portfolio-item a:hover {
   color: #fff;
 }
 
 /* #WHITE BACKGROUND
 /* ====================== */
 
-/* widget title inverted */
-.widget-title.widget-title--inverted::before,
-
 /* preloader */
 #preloader,
 
 /* resume */
-.timeline-item-bullet,
-
-/* clients */
-.clients-list a,
-
-/* testimonials */
-.testimonial-header span,
-
-/* contact */
-.captcha-holder .captcha {
+.timeline-item-bullet {
   background-color: #fff;
-}
-
-/* #TRANSPARENT WHITE COLOR
-/* ======================== */
-
-/* widget title inverted */
-.widget-title--inverted em,
-
-/* hobbies */
-.hobby-description,
-
-/* testimonials */
-.testimonial-job,
-.testimonial-header a {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 /* #TRANSPARENT WHITE BACKGROUND
 /* ============================= */
 
-/* hobbies */
-.hobbies-list > li,
-
-/* process */
-.process-list .md-rounded-box,
-
-/* process */
-.horizontal-rail::after,
-.horizontal-rail::before {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 /* resume */
 .education-timeline .timeline-box small,
 .custom-tooltip span {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* #TRANSPARENT WHITE BORDER
-/* ============================= */
-
-/* hobbies */
-.hobbies-list > li,
-
-/* process */
-.process-list .md-rounded-box {
-  border-color: rgba(255, 255, 255, 0.8);
-}
-
-/* process */
-.horizontal-rail {
-  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ========================================= */
@@ -179,19 +90,7 @@
 
 /* resume */
 .timeline-rail,
-.timeline-item-bullet,
-
-/* pricing */
-.pricing-table,
-.features-list,
-.features-list > li,
-
-/* blog */
-.breadcrumb-container,
-.recent-posts-wrapper li + li,
-.tweets-list li + li,
-.comments-list,
-.comment {
+.timeline-item-bullet {
   border-color: #999;
 }
 
@@ -246,19 +145,7 @@ body,
 .bare-social-menu a,
 
 /* secondary title */
-.secondary-title__icon.h5,
-
-/* blog */
-.post__meta a,
-.post::after,
-.owner-socials-wrapper a,
-.recent-posts-wrapper a,
-.post-tags-wrapper a,
-.comment-reply-link,
-.comment-date,
-
-/* contact */
-.captcha-holder .captcha {
+.secondary-title__icon.h5 {
   color: var(--dark-gray);
 }
 
@@ -295,12 +182,6 @@ h6,
 /*	$DARKER GRAY - #323232                    */
 /* ========================================= */
 
-/* widget title */
-.widget-title::before,
-
-/* hobbies */
-.hobby-description,
-
 /* footer */
 footer {
   background-color: var(--darker-gray);
@@ -327,16 +208,11 @@ footer {
 #home .huge,
 
 /* parallax home */
-.profession-box h5,
-
-/* splitted home */
-#splitted-home .btn,
-#splitted-home h2 {
+.profession-box h5 {
   color: rgba(0, 0, 0, 0.85);
 }
 
 /* home */
-.specializations-list,
 #home .hollow-social-menu a {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -353,9 +229,6 @@ footer {
 /* #BLUE COLOR
 /* ======================== */
 
-/* blue buttons */
-.btn--main-color,
-
 /* dark blue button  */
 .btn--main-inverted:hover,
 
@@ -371,26 +244,8 @@ footer {
 /* skills */
 .skill-meter > div.on,
 
-/* services */
-.service-icon,
-
-/* process */
-.process-list span,
-
 /* work */
-.item-caption,
-
-/* prices */
-.best-pricing-table .package-title-box,
-.best-pricing-table .package-title-box::before,
-
-/* blog */
-.view-news-btn:hover,
-.read-more-btn,
-.pager li > a:hover,
-
-/* contact */
-.captcha-holder {
+.item-caption {
   background-color: var(--main-blue);
 }
 
@@ -410,22 +265,8 @@ a,
 .timeline-info-list,
 
 /* skills */
-.colored-bullets li::before,
-
-/* pricing */
-.price,
-
-/* blog */
-.breadcrumb > .active {
+.colored-bullets li::before {
   color: var(--main-blue);
-}
-
-/* #TRANSPARENT BACKGROUND
-/* ======================== */
-
-/* testimonials */
-#testimonials .overlay {
-  background-color: rgba(51, 187, 285, 0.85);
 }
 
 /* #BLUE BORDER
@@ -437,8 +278,7 @@ a,
 .profession-box::before,
 .profession-box h5::after,
 
-/* contact */
-.captcha-holder .captcha,
+/* skills */
 .custom-tooltip::after,
 
 input:focus,
@@ -463,14 +303,8 @@ a:hover {
   color: var(--dark-blue);
 }
 
-/* dark blue buttons */
-.btn--main-color:hover,
-
 /* portfolio */
-.portfolio-item .btn--main-inverted:hover,
-
-/* blog */
-.read-more-btn:hover {
+.portfolio-item .btn--main-inverted:hover {
   background-color: var(--dark-blue);
 }
 
@@ -499,17 +333,7 @@ a:hover {
 .tabs-list li a:focus,
 
 /* dark blue buttons */
-.btn--main-inverted,
-
-/* splitted home */
-#splitted-home .btn:hover,
-
-/* pricing */
-.package-title-box,
-
-/* blog */
-.view-news-btn,
-.pager li > a {
+.btn--main-inverted {
   background-color: var(--darker-blue);
   color: white;
 }
@@ -518,10 +342,7 @@ a:hover {
 /* ======================== */
 
 /* tabs list */
-.tabs-list li a,
-
-/* contact */
-.contact-tabs-holder {
+.tabs-list li a {
   border-color: var(--darker-blue) !important;
   color: var(--darker-blue);
 }
@@ -534,10 +355,7 @@ a:hover {
 #home,
 
 /* profile */
-.profile-image-holder,
-
-/* clients */
-#clients {
+.profile-image-holder {
   background-color: var(--bale-blue);
 }
 
@@ -719,18 +537,4 @@ a:hover {
     #2a2a30 100%
   ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545072', endColorstr='#2a2a30',GradientType=1 );
-}
-
-.home__image-box {
-  border-color: hsla(0, 0%, 100%, 0.1);
-  box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.12);
-}
-
-.home__name {
-  color: #000;
-  text-shadow: 0 0 3px hsla(0, 0%, 0%, 0.5);
-}
-
-.rings .ring {
-  border-color: #fff;
 }
