@@ -1,5 +1,5 @@
 // Set cache version
-const version = '1.0.0'
+const version = '1.0.1'
 const cacheName = `precache-${version}`
 const currentCaches = [cacheName, 'runtime']
 
