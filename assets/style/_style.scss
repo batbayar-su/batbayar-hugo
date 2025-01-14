@@ -57,7 +57,7 @@
 
 @media (max-width: 991px) {
   .main-title__left {
-    text-align: left;
+    text-align: left !important;
   }
 
   .main-title__right {
@@ -147,6 +147,8 @@
 .profession-box .table-cell {
   width: 1px;
   white-space: nowrap;
+  padding: 0;
+  background-color: transparent;
 }
 
 .profession-box h5 {
@@ -346,6 +348,11 @@
 /* $SKILLS SECTION                           */
 /* ========================================= */
 
+.tabs-list {
+  border-bottom: none;
+  justify-content: center;
+}
+
 .tabs-list li a {
   width: 110px;
   height: 45px;
@@ -362,7 +369,7 @@
   border-bottom-left-radius: 2px;
 }
 
-.tabs-list li:last-child a {
+.nav-tabs.tabs-list li.nav-item:last-child a.nav-link {
   -webkit-border-top-right-radius: 2px;
   border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
@@ -370,13 +377,13 @@
 }
 
 @media (max-width: 767px) {
-  #skills .tabs-list,
-  #skills .tabs-list li,
-  #skills .tabs-list a {
+  #skills .nav-tabs.tabs-list,
+  #skills .nav-tabs.tabs-list li.nav-item,
+  #skills .nav-tabs.tabs-list a.nav-link {
     width: 100%;
   }
 
-  #skills .tabs-list a {
+  #skills .nav-tabs.tabs-list a.nav-link {
     margin-bottom: -1px;
   }
 }
@@ -385,13 +392,13 @@
   margin-top: -30px !important;
 }
 
-.skills-list > div {
+.skills-list > .row > div {
   margin-top: 30px;
 }
 
 @media (max-width: 991px) {
-  .skills-list > div {
-    text-align: left;
+  .skills-list > .row > div {
+    text-align: left !important;
   }
 }
 

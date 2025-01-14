@@ -1,21 +1,23 @@
 <!-- @CODING PANEL -->
-<div class="row tab-pane active skills-list" id="skill-panel-1">
-  {{ range $k, $v := $.Site.Data.skill.coding }}
-    <div
-      class="col-lg-4 col-md-5 col-sm-6 {{ if eq (mod $k 2) 0 }}
-        col-lg-offset-2 col-md-offset-1
-      {{ end }} text-uppercase">
-      <h6 class="normal">{{ .item.name }}</h6>
-      <div class="skill-meter xs-padder">
-        {{ $level := (int .item.level) }}
-        {{ range seq 5 }}
-          {{ if gt . $level }}
-            <div></div>
-          {{ else }}
-            <div class="on"></div>
+<div class="tab-pane active skills-list" id="skill-panel-1">
+  <div class="row">
+    {{ range $k, $v := $.Site.Data.skill.coding }}
+      <div
+        class="text-uppercase col-md-6 col-lg-4 {{ if eq (mod $k 2) 0 }}
+          offset-lg-2
+        {{ end }}">
+        <h6 class="normal">{{ .item.name }}</h6>
+        <div class="skill-meter xs-padder">
+          {{ $level := (int .item.level) }}
+          {{ range seq 5 }}
+            {{ if gt . $level }}
+              <div></div>
+            {{ else }}
+              <div class="on"></div>
+            {{ end }}
           {{ end }}
-        {{ end }}
+        </div>
       </div>
-    </div>
-  {{ end }}
+    {{ end }}
+  </div>
 </div>

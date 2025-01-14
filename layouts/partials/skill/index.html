@@ -5,9 +5,9 @@
 <section id="skills" class="main-block">
   <div class="container text-center">
     <!-- #SKILLS TITLE -->
-    <div class="main-title text-left">
+    <div class="main-title text-start">
       <div class="main-title__inner">
-        <div class="text-right main-title__left">
+        <div class="text-end main-title__left">
           <i class="fa fa-pie-chart mega"></i>
           <h2 class="text-uppercase heavy lh padder">skills</h2>
           <em class="h5 serif em text-capitalize regular">Whats I'm good at</em>
@@ -24,23 +24,39 @@
     <div class="main-block__padder">
       <!-- #SKILLS TABS -->
       <ul
-        class="nav nav-tabs text-uppercase small bold inline-block tabs-list"
+        class="nav nav-tabs tabs-list text-uppercase small bold"
         role="tablist">
         <li role="presentation" class="nav-item">
-          <a href="#skill-panel-1" class="active" role="tab" data-toggle="tab">
+          <a
+            href="#skill-panel-1"
+            class="active nav-link"
+            role="tab"
+            data-bs-toggle="tab">
             coding
           </a>
         </li>
         <li role="presentation" class="nav-item">
-          <a href="#skill-panel-2" role="tab" data-toggle="tab">knowlage</a>
+          <a
+            href="#skill-panel-2"
+            class="nav-link"
+            role="tab"
+            data-bs-toggle="tab">
+            knowlage
+          </a>
         </li>
         <li role="presentation" class="nav-item">
-          <a href="#skill-panel-3" role="tab" data-toggle="tab">personal</a>
+          <a
+            href="#skill-panel-3"
+            class="nav-link"
+            role="tab"
+            data-bs-toggle="tab">
+            personal
+          </a>
         </li>
       </ul>
 
       <!-- #SKILLS PANELS -->
-      <div class="main-block__sub-padder tab-content text-left">
+      <div class="main-block__sub-padder tab-content text-start">
         {{ partial "skill/coding.html" . }}
 
         {{ partial "skill/knowledge.html" . }}

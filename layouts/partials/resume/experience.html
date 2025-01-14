@@ -1,5 +1,5 @@
 <!-- #EXPERIENCE -->
-<div class="main-block__padder text-left">
+<div class="main-block__padder text-start">
   <!-- @EXPERIENCE TITLE -->
   <div class="table">
     <div class="table-cell h5 secondary-title__icon">
@@ -35,7 +35,8 @@
                   small
                   inline-block
                   v-middle
-                  hidden-xs
+                  d-none
+                  d-md-inline-block
                 "
                   style="visibility: visible; animation-name: fadeInLeft">
                   <span>
@@ -48,10 +49,11 @@
               <div
                 class="
                 timeline-box
+                text-uppercase
                 inline-block
                 v-middle
-                hidden-xs
-                text-uppercase
+                d-none
+                d-md-inline-block
               "
                 style="background-image: url('assets/images/companies/{{ .item.image }}'); visibility: visible; animation-name: fadeInRight;"></div>
             </div>
@@ -59,7 +61,10 @@
             <div
               class="no-overflow timeline-item-info"
               style="visibility: visible; animation-name: fadeInRight">
-              <h6 class="text-capitalize lh">{{ .item.position }}</h6>
+              <h6 class="text-capitalize lh">
+                {{ .item.position }}
+                <span class="d-md-none">({{ .item.dates }})</span>
+              </h6>
               <ul
                 class="
                 list-inline list-gutter-xs
@@ -69,9 +74,9 @@
                 timeline-info-list
               "
                 \>
-                <li>{{ .item.company }}</li>
-                <li>•</li>
-                <li>{{ .item.location }}</li>
+                <li class="list-inline-item">{{ .item.company }}</li>
+                <li class="list-inline-item">•</li>
+                <li class="list-inline-item">{{ .item.location }}</li>
               </ul>
               <p class="xs-padder">{{ .item.description }}</p>
               <ul class="duties-list">

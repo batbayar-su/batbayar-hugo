@@ -36,10 +36,9 @@
 .hollow-social-menu a:hover,
 
 /* tabs list */
-.tabs-list > li.active > a,
-.tabs-list > li.active > a:hover,
-.tabs-list > li > a:hover,
-.tabs-list > li.active > a:focus,
+.nav-tabs.tabs-list > li.nav-item > a.active,
+.nav-tabs.tabs-list > li.nav-item > a:hover,
+.nav-tabs.tabs-list > li.nav-item > a:focus,
 
 /* resume */
 .education-timeline .timeline-box span,
@@ -259,7 +258,6 @@ a,
 
 /* navigation */
 .navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a.mPS2id-highlight,
 
 /* resume */
 .timeline-info-list,
@@ -289,8 +287,7 @@ select:focus,
 }
 
 @media (min-width: 992px) {
-  .navbar .navbar-nav > li > a:hover,
-  .navbar .navbar-nav > li > a.mPS2id-highlight {
+  .navbar .navbar-nav > li > a:hover {
     border-color: var(--main-blue);
   }
 }
@@ -316,7 +313,7 @@ a:hover {
 /* ======================== */
 
 /* tabs list */
-.tabs-list li a,
+.nav-tabs.tabs-list li.nav-item a,
 
 /* portfolio */
 .portfolio-item h6,
@@ -328,9 +325,10 @@ a:hover {
 /* ======================== */
 
 /* tabs list */
-.tabs-list li a.active,
-.tabs-list li a:hover,
-.tabs-list li a:focus,
+.nav-tabs.tabs-list li.nav-item a.active,
+.nav-tabs.tabs-list li.nav-item a:hover,
+.nav-tabs.tabs-list li.nav-item a:focus,
+.portfolio-icon-btn i,
 
 /* dark blue buttons */
 .btn--main-inverted {
@@ -342,7 +340,7 @@ a:hover {
 /* ======================== */
 
 /* tabs list */
-.tabs-list li a {
+.nav-tabs.tabs-list li.nav-item a {
   border-color: var(--darker-blue) !important;
   color: var(--darker-blue);
 }

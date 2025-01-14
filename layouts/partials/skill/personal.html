@@ -1,13 +1,15 @@
 <!-- @PERSONAL PANEL -->
-<div class="row tab-pane skills-list text-capitalize" id="skill-panel-3">
-  {{ range $.Site.Data.skill.personal }}
-    <div class="col-md-4 col-sm-6 text-center">
-      <ul
-        class="colored-bullets checked-list list-gutter-sm list-unstyled inline-block text-left">
-        {{ range .col }}
-          <li>{{ .item }}</li>
-        {{ end }}
-      </ul>
-    </div>
-  {{ end }}
+<div class="tab-pane skills-list text-capitalize" id="skill-panel-3">
+  <div class="row">
+    {{ range $.Site.Data.skill.personal }}
+      <div class="col-md-4 col-sm-6 text-center">
+        <ul
+          class="colored-bullets checked-list list-gutter-sm list-unstyled inline-block text-start">
+          {{ range .col }}
+            <li>{{ .item }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
 </div>

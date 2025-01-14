@@ -1,9 +1,9 @@
 <section id="profile" class="main-block">
   <div class="container text-center">
     <!-- #PROFILE TITLE -->
-    <div class="main-title text-left">
+    <div class="main-title text-start">
       <div class="main-title__inner">
-        <div class="text-right main-title__left">
+        <div class="text-end main-title__left">
           <i class="fa fa-user mega"></i>
           <h2 class="text-uppercase heavy lh padder">profile</h2>
         </div>
@@ -18,14 +18,14 @@
     </div>
 
     <!-- #PROFILE CONTENT -->
-    <div class="row main-block__padder text-left">
+    <div class="row main-block__padder text-start">
       <!-- #PROFILE PHOTO -->
-      <div class="col-lg-4 col-md-6 col-lg-push-4 text-center">
+      <div class="col-lg-4 order-2 col-md-6 col-lg-push-4 text-center">
         <div class="inline-block photo-column-inner">
           <div class="xlg-rounded-box profile-image-holder center-block">
             <img
               src="/assets/images/avatar.jpg"
-              class="img-responsive"
+              class="img-fluid"
               style="width: 100%"
               alt="Profile image" />
           </div>
@@ -33,7 +33,7 @@
       </div>
 
       <!-- #PROFILE PERSONAL INFO -->
-      <div class="col-lg-4 col-md-6 col-lg-push-4 info-column">
+      <div class="col-lg-4 order-3 col-md-6 col-lg-push-4 info-column">
         <div>
           <h5 class="text-capitalize">personal info</h5>
           <ul class="padder list-unstyled info-list">
@@ -48,7 +48,7 @@
           </ul>
           <ul class="list-inline list-gutter-xs padder h5 bare-social-menu">
             {{ range $.Site.Data.socials }}
-              <li>
+              <li class="list-inline-item">
                 <a
                   href="{{ .item.link }}"
                   class="{{ .item.name }}-color"
@@ -64,7 +64,7 @@
       </div>
 
       <!-- #PROFILE STORY -->
-      <div class="col-lg-4 col-lg-pull-8 col-xs-12 text-left story-column">
+      <div class="col-lg-4 order-1 col-12 text-start story-column">
         <div>
           <h5 class="text-capitalize">Summary</h5>
           <p class="padder">
