@@ -53,7 +53,7 @@
                 inline-block
                 v-middle
                 d-none
-                d-md-inline-block
+                d-lg-inline-block
               "
                 style="background-image: url('assets/images/companies/{{ .item.image }}'); visibility: visible; animation-name: fadeInRight;"></div>
             </div>
@@ -63,8 +63,8 @@
               style="visibility: visible; animation-name: fadeInRight">
               <h6 class="text-capitalize lh">
                 {{ .item.position }}
-                <span class="d-md-none">({{ .item.dates }})</span>
               </h6>
+              <p class="d-md-none mb-0">{{ .item.dates }}</p>
               <ul
                 class="
                 list-inline list-gutter-xs
