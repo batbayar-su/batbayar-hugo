@@ -192,6 +192,11 @@ footer {
 
 .copyright-holder {
   background-color: var(--darker-gray-shade);
+  
+  p {
+    padding: 1rem 0;
+    margin: 0;
+  }
 }
 
 /* ========================================= */
