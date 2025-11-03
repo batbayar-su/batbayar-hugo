@@ -1,7 +1,28 @@
 <section id="profile" class="main-block">
   <div class="container text-center">
-    <!-- #PROFILE TITLE -->
-    <div class="main-title text-start">
+    <!-- #PRINT HEADER (visible only in print) -->
+    <div class="print-only" style="text-align: center; margin-bottom: 20px;">
+      <h1 style="font-size: 32px; font-weight: 800; margin: 0 0 10px 0;">
+        {{ $.Site.Data.general.name }}
+      </h1>
+      <p style="margin: 5px 0; font-size: 14px;">
+        {{ $.Site.Data.general.address }}
+        <br />
+        {{ $.Site.Data.general.phone }} |
+        {{ $.Site.Data.general.email }}
+      </p>
+      <p style="margin: 10px 0 0 0; font-size: 13px;">
+        {{ range $index, $social := $.Site.Data.socials }}
+        {{ if $index }}|{{ end }}
+        <a href="{{ $social.item.link }}" style="text-decoration: underline;">
+          {{ title $social.item.name }}
+        </a>
+        {{ end }}
+      </p>
+    </div>
+
+    <!-- #PROFILE TITLE (visible on screen) -->
+    <div class="main-title text-start no-print">
       <div class="main-title__inner">
         <div class="text-end main-title__left">
           <i class="fa fa-user mega"></i>
@@ -23,11 +44,7 @@
       <div class="col-lg-4 order-2 col-md-6 col-lg-push-4 text-center">
         <div class="inline-block photo-column-inner">
           <div class="xlg-rounded-box profile-image-holder center-block">
-            <img
-              src="/assets/images/avatar.jpg"
-              class="img-fluid"
-              style="width: 100%"
-              alt="Profile image" />
+            <img src="/assets/images/avatar.jpg" class="img-fluid" style="width: 100%" alt="Profile image" />
           </div>
         </div>
       </div>
@@ -48,16 +65,12 @@
           </ul>
           <ul class="list-inline list-gutter-xs padder h5 bare-social-menu">
             {{ range $.Site.Data.socials }}
-              <li class="list-inline-item">
-                <a
-                  href="{{ .item.link }}"
-                  class="{{ .item.name }}-color"
-                  aria-label="{{ .item.name }}"
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  <i class="fa fa-{{ .item.name }}"></i>
-                </a>
-              </li>
+            <li class="list-inline-item">
+              <a href="{{ .item.link }}" class="{{ .item.name }}-color" aria-label="{{ .item.name }}"
+                rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-{{ .item.name }}"></i>
+              </a>
+            </li>
             {{ end }}
           </ul>
         </div>
@@ -66,7 +79,7 @@
       <!-- #PROFILE STORY -->
       <div class="col-lg-4 order-1 col-12 text-start story-column">
         <div>
-          <h5 class="text-capitalize">Summary</h5>
+          <h5 class="text-capitalize">About me</h5>
           <p class="padder">
             Batbayar has been working as a software engineer for
             {{ sub now.Year 2014 }} years. He finds the daily challenges and
